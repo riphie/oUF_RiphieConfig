@@ -1,0 +1,16 @@
+## Interface: 100000
+## Author: Riphie
+## Title: oUF_RiphieConfig
+
+init.lua
+global.lua
+tags.lua
+player.lua
+target.lua
+targettarget.lua
+pet.lua
+focus.lua
+party.lua
+boss.lua
+nameplate.lua
+raid.lua

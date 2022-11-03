@@ -1,0 +1,120 @@
+local A, L = ...
+
+local cvars = {
+  nameplateMinScale = 1,
+  nameplateMaxScale = 1,
+  nameplateMinScaleDistance = 0,
+  nameplateMaxScaleDistance = 40,
+  nameplateGlobalScale = 1,
+  NamePlateHorizontalScale = 1,
+  NamePlateVerticalScale = 1,
+  nameplateSelfScale = 1,
+  nameplateSelectedScale = 1,
+  nameplateLargerScale = 1.2,
+  nameplateShowFriendlyNPCs = 0,
+  nameplateMinAlpha = 0.5,
+  nameplateMaxAlpha = 0.5,
+  nameplateMinAlphaDistance = 0,
+  nameplateMaxAlphaDistance = 40,
+  nameplateSelectedAlpha = 1,
+}
+L.C.NamePlateCVars = cvars
+
+local function CustomFilterBuffs(...)
+  local element, unit, button, name, texture, count, debuffType, duration, expiration, caster, isStealable, nameplateShowSelf, spellID, canApply, isBossDebuff, casterIsPlayer, nameplateShowAll, timeMod, effect1, effect2, effect3 =
+    ...
+  return nameplateShowSelf or nameplateShowAll or (caster == "player" or caster == "pet" or caster == "vehicle")
+end
+
+local function CustomFilterDebuffs(...)
+  local element, unit, button, name, texture, count, debuffType, duration, expiration, caster, isStealable, nameplateShowSelf, spellID, canApply, isBossDebuff, casterIsPlayer, nameplateShowAll, timeMod, effect1, effect2, effect3 =
+    ...
+  return nameplateShowSelf or nameplateShowAll or (caster == "player" or caster == "pet" or caster == "vehicle")
+end
+
+L.C.nameplate = {
+  enabled = true,
+
+  size = { 160, 15 },
+  point = { "CENTER" }, -- relative to the nameplate base!
+  scale = 1 * UIParent:GetScale() * L.C.globalscale, -- nameplates are not part of uiparent, they must be multiplied by uiparent scale!
+
+  healthbar = {
+    colorTapping = true,
+    colorReaction = true,
+    colorClass = true,
+    colorHealth = true,
+    colorThreat = true,
+    colorThreatInvers = true,
+    frequentUpdates = true,
+
+    name = {
+      enabled = true,
+      size = 12,
+      points = {
+        { "TOPLEFT", 0, 15 },
+        { "TOPRIGHT", 0, 15 },
+      },
+      align = "CENTER",
+      tag = "[name]|r",
+      noshadow = true,
+    },
+  },
+
+  raidicon = {
+    enabled = true,
+    size = { 18, 18 },
+    point = { "CENTER", "TOP", 0, 0 },
+  },
+
+  castbar = {
+    enabled = true,
+    size = { 160, 20 },
+    point = { "TOP", "BOTTOM", 0, -5 },
+
+    name = {
+      enabled = true,
+      size = 12,
+      points = {
+        { "LEFT", 2, 0 },
+        { "RIGHT", -2, 0 },
+      },
+    },
+
+    icon = {
+      enabled = true,
+      size = { 26, 26 },
+      point = { "RIGHT", "LEFT", -6, 0 },
+    },
+  },
+
+  buffs = {
+    enabled = false,
+    size = 22,
+    point = { "BOTTOM", "TOP", 0, 25 },
+    num = 10,
+    cols = 4,
+    spacing = 5,
+    initialAnchor = "BOTTOMLEFT",
+    growthX = "RIGHT",
+    growthY = "UP",
+    disableCooldown = true,
+    filter = "HELPFUL|INCLUDE_NAME_PLATE_ONLY",
+    CustomFilter = CustomFilterBuffs,
+  },
+
+  debuffs = {
+    enabled = true,
+    size = 22,
+    point = { "BOTTOMLEFT", "TOPLEFT", 0, 25 },
+    num = 5,
+    cols = 5,
+    spacing = 5,
+    initialAnchor = "TOPLEFT",
+    growthX = "RIGHT",
+    growthY = "UP",
+    disableCooldown = false,
+    filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
+    CustomFilter = CustomFilterDebuffs,
+  },
+}

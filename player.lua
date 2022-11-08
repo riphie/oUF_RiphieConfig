@@ -76,6 +76,17 @@ L.C.player = {
       noshadow = true,
     },
 
+    time = {
+      enabled = true,
+      size = 12,
+      points = {
+        { "LEFT", 2, 0 },
+        { "RIGHT", -2, 0 },
+      },
+      align = "right",
+      noshadow = true,
+    },
+
     icon = {
       enabled = false,
       size = { 20, 20 },

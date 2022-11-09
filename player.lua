@@ -3,8 +3,8 @@ local A, L = ...
 L.C.player = {
   enabled = true,
 
-  size = { 200, 18 },
-  point = { "RIGHT", UIParent, "CENTER", -160, -300 },
+  size = { 200, 20 },
+  point = { "RIGHT", UIParent, "CENTER", -160, -200 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {

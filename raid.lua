@@ -4,7 +4,7 @@ L.C.raid = {
   enabled = true,
 
   size = { 80, 20 },
-  points = { -- list of 8 points, one for each raid group
+  points = {
     { "TOPLEFT", 20, -20 },
     { "TOP", "oUF_RiphieRaidHeader1", "BOTTOM", 0, -10 },
     { "TOP", "oUF_RiphieRaidHeader2", "BOTTOM", 0, -10 },

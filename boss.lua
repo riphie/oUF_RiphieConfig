@@ -4,7 +4,7 @@ L.C.boss = {
   enabled = true,
 
   size = { 130, 35 },
-  point = { "CENTER", UIParent, "CENTER", 440, 100 }, -- point of first boss frame
+  point = { "CENTER", UIParent, "CENTER", 440, 100 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -29,7 +29,7 @@ L.C.boss = {
   powerbar = {
     enabled = true,
     size = { 130, 3 },
-    point = { "TOP", "BOTTOM", 0, -1 }, -- if no relativeTo is given the frame base will be the relativeTo reference
+    point = { "TOP", "BOTTOM", 0, -1 },
     colorPower = true,
   },
 
@@ -76,7 +76,7 @@ L.C.boss = {
 
   setup = {
     point = "TOP",
-    relativePoint = "BOTTOM", -- relativeTo will be the boss frame preceding
+    relativePoint = "BOTTOM",
     xOffset = 0,
     yOffset = -40,
   },

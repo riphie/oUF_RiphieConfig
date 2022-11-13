@@ -36,8 +36,8 @@ L.C.nameplate = {
   enabled = true,
 
   size = { 160, 15 },
-  point = { "CENTER" }, -- relative to the nameplate base!
-  scale = 1 * UIParent:GetScale() * L.C.globalscale, -- nameplates are not part of uiparent, they must be multiplied by uiparent scale!
+  point = { "CENTER" },
+  scale = 1 * UIParent:GetScale() * L.C.globalscale,
 
   healthbar = {
     colorThreat = true,

@@ -37,7 +37,7 @@ L.C.party = {
   powerbar = {
     enabled = false,
     size = { 180, 5 },
-    point = { "TOP", "BOTTOM", 0, -1 }, -- if no relativeTo is given the frame base will be the relativeTo reference
+    point = { "TOP", "BOTTOM", 0, -1 },
     colorPower = true,
   },
 

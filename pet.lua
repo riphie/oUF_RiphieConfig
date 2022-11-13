@@ -53,12 +53,6 @@ L.C.pet = {
     },
   },
 
-  altpowerbar = {
-    enabled = false,
-    size = { 80, 5 },
-    point = { "BOTTOMLEFT", "oUF_RiphiePlayer", "TOPLEFT", 0, 4 },
-  },
-
   debuffs = {
     enabled = false,
     size = 22,

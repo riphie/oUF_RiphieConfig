@@ -33,12 +33,6 @@ L.C.boss = {
     colorPower = true,
   },
 
-  altpowerbar = {
-    enabled = false,
-    size = { 130, 5 },
-    point = { "BOTTOMLEFT", "TOPLEFT", 0, 4 },
-  },
-
   raidicon = {
     enabled = true,
     size = { 18, 18 },

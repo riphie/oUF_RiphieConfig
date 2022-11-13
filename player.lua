@@ -45,7 +45,7 @@ L.C.player = {
 
     enabled = true,
     size = { 200, 3 },
-    point = { "TOP", "BOTTOM", 0, -1 }, -- if no relativeTo is given the frame base will be the relativeTo reference
+    point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {
       enabled = false,
@@ -97,25 +97,4 @@ L.C.player = {
       enabled = true,
     },
   },
-
-  -- TODO: need to figure this out
-  -- classbar = {
-  --   enabled = true,
-  --   size = { 22, 4 },
-  --   point = { "BOTTOMRIGHT", "TOPRIGHT", 0, 3 },
-  --
-  --   splits = {
-  --     enabled = true,
-  --     texture = L.C.textures.split,
-  --     size = { 5, 5 },
-  --     color = { 0, 0, 0, 1 },
-  --   },
-  -- },
-
-  -- TODO: need to figure this out
-  -- altpowerbar = {
-  --   enabled = false,
-  --   size = { 130, 5 },
-  --   point = { "BOTTOMLEFT", "TOPLEFT", 0, 4 },
-  -- },
 }

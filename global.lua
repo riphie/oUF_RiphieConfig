@@ -19,8 +19,6 @@ L.C.backdrop = {
 L.C.textures = {
   statusbar = L.C.mediapath .. "Skullflower2",
   statusbarBG = L.C.mediapath .. "Skullflower2",
-  aura = L.C.mediapath .. "square",
-  split = L.C.mediapath .. "split",
 }
 
 L.C.colors = {}

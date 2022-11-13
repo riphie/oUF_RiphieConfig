@@ -8,7 +8,6 @@ L.C.target = {
   scale = 1 * L.C.globalscale,
 
   healthbar = {
-    colorTapping = false,
     colorDisconnected = false,
     colorClass = true,
     colorReaction = false,

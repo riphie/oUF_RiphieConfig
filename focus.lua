@@ -8,7 +8,6 @@ L.C.focus = {
   scale = 1 * L.C.globalscale,
 
   healthbar = {
-    colorTapping = true,
     colorDisconnected = true,
     colorReaction = true,
     colorClass = true,

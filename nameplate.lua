@@ -40,12 +40,12 @@ L.C.nameplate = {
   scale = 1 * UIParent:GetScale() * L.C.globalscale, -- nameplates are not part of uiparent, they must be multiplied by uiparent scale!
 
   healthbar = {
-    colorTapping = true,
+    colorThreat = true,
+    colorThreatInvers = true,
     colorReaction = true,
     colorClass = true,
     colorHealth = true,
-    colorThreat = true,
-    colorThreatInvers = true,
+
     frequentUpdates = true,
 
     name = {

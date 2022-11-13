@@ -48,7 +48,14 @@ L.C.target = {
 
     enabled = true,
     size = { 200, 3 },
-    point = { "TOP", "BOTTOM", 0, -1 }, -- if no relativeTo is given the frame base will be the relativeTo reference
+    point = { "TOP", "BOTTOM", 0, -1 },
+
+    power = {
+      enabled = false,
+      size = 16,
+      point = { "LEFT", -2, 0 },
+      tag = "[perpp]",
+    },
   },
 
   raidicon = {
@@ -80,10 +87,10 @@ L.C.target = {
   },
 
   buffs = {
-    enabled = true,
+    enabled = false,
     size = 22,
     point = { "BOTTOMLEFT", "RIGHT", 10, 5 },
-    num = 32,
+    num = 40,
     cols = 8,
     spacing = 5,
     initialAnchor = "BOTTOMLEFT",
@@ -93,7 +100,7 @@ L.C.target = {
   },
 
   debuffs = {
-    enabled = true,
+    enabled = false,
     size = 22,
     point = { "TOPLEFT", "RIGHT", 10, -5 },
     num = 40,

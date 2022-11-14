@@ -4,7 +4,7 @@ L.C.target = {
   enabled = true,
 
   size = { 200, 20 },
-  point = { "LEFT", UIParent, "CENTER", 160, -200 },
+  point = { "LEFT", UIParent, "CENTER", 160, -202 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -48,7 +48,7 @@ L.C.target = {
 
     enabled = true,
     size = { 200, 3 },
-    point = { "TOP", "BOTTOM", 0, -1 },
+    point = { "TOP", "BOTTOM", 0, -0.5 },
 
     power = {
       enabled = false,

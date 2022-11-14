@@ -26,12 +26,6 @@ L.C.pet = {
     },
   },
 
-  raidicon = {
-    enabled = false,
-    size = { 18, 18 },
-    point = { "CENTER", "LEFT", 0, 0 },
-  },
-
   castbar = {
     enabled = true,
     size = { 80, 20 },

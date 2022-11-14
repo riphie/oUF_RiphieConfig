@@ -25,10 +25,4 @@ L.C.targettarget = {
       noshadow = true,
     },
   },
-
-  raidicon = {
-    enabled = false,
-    size = { 18, 18 },
-    point = { "CENTER", "LEFT", 0, 0 },
-  },
 }

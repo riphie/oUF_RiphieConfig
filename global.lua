@@ -2,7 +2,7 @@ local A, L = ...
 
 L.C.mediapath = "interface\\addons\\" .. A .. "\\media\\"
 
-L.C.globalscale = PixelUtil.GetPixelToUIUnitFactor()
+L.C.globalscale = 1
 
 L.C.backdrop = {
   bgFile = "Interface\\ChatFrame\\ChatFrameBackground",

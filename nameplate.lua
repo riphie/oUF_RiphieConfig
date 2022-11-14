@@ -61,12 +61,6 @@ L.C.nameplate = {
     },
   },
 
-  raidicon = {
-    enabled = true,
-    size = { 18, 18 },
-    point = { "CENTER", "TOP", 0, 0 },
-  },
-
   castbar = {
     enabled = true,
     size = { 160, 20 },
@@ -116,5 +110,11 @@ L.C.nameplate = {
     disableCooldown = false,
     filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
     CustomFilter = CustomFilterDebuffs,
+  },
+
+  raidicon = {
+    enabled = true,
+    size = { 18, 18 },
+    point = { "CENTER", "TOP", 0, 0 },
   },
 }

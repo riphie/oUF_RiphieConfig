@@ -3,8 +3,8 @@ local A, L = ...
 L.C.boss = {
   enabled = true,
 
-  size = { 130, 35 },
-  point = { "CENTER", UIParent, "CENTER", 440, 100 },
+  size = { 130, 30 },
+  point = { "CENTER", UIParent, "CENTER", 450, 100 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {

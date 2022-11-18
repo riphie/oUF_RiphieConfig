@@ -27,7 +27,7 @@ L.C.focus = {
 
     health = {
       enabled = true,
-      size = 23,
+      size = 22,
       point = { "LEFT", 5, 0 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,

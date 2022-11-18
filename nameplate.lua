@@ -9,7 +9,7 @@ local cvars = {
   NamePlateHorizontalScale = 1,
   NamePlateVerticalScale = 1,
   nameplateSelfScale = 1,
-  nameplateSelectedScale = 1,
+  nameplateSelectedScale = 1.1,
   nameplateLargerScale = 1.2,
   nameplateShowFriendlyNPCs = 0,
   nameplateMinAlpha = 0.5,
@@ -17,6 +17,7 @@ local cvars = {
   nameplateMinAlphaDistance = 0,
   nameplateMaxAlphaDistance = 40,
   nameplateSelectedAlpha = 1,
+  nameplateOccludedAlphaMult = 0,
 }
 L.C.NamePlateCVars = cvars
 

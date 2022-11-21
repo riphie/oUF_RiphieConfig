@@ -36,7 +36,7 @@ end
 L.C.nameplate = {
   enabled = true,
 
-  size = { 160, 15 },
+  size = { 170, 20 },
   point = { "CENTER" },
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 

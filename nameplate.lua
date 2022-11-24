@@ -9,8 +9,8 @@ local cvars = {
   NamePlateHorizontalScale = 1,
   NamePlateVerticalScale = 1,
   nameplateSelfScale = 1,
-  nameplateSelectedScale = 1.1,
-  nameplateLargerScale = 1.2,
+  nameplateSelectedScale = 1,
+  nameplateLargerScale = 1,
   nameplateShowFriendlyNPCs = 0,
   nameplateMinAlpha = 0.5,
   nameplateMaxAlpha = 0.5,
@@ -36,7 +36,7 @@ end
 L.C.nameplate = {
   enabled = true,
 
-  size = { 170, 20 },
+  size = { 170, 15 },
   point = { "CENTER" },
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 

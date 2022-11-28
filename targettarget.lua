@@ -3,7 +3,7 @@ local A, L = ...
 L.C.targettarget = {
   enabled = true,
 
-  size = { 80, 25 },
+  size = { 80, 20 },
   point = { "TOPRIGHT", "oUF_RiphieTarget", "BOTTOMRIGHT", 0, -10 },
   scale = 1 * L.C.globalscale,
 

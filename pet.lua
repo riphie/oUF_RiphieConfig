@@ -3,7 +3,7 @@ local A, L = ...
 L.C.pet = {
   enabled = true,
 
-  size = { 80, 26 },
+  size = { 80, 20 },
   point = { "TOPLEFT", "oUF_RiphiePlayer", "BOTTOMLEFT", 0, -10 },
   scale = 1 * L.C.globalscale,
 

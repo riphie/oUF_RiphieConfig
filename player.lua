@@ -88,7 +88,7 @@ L.C.player = {
     },
 
     icon = {
-      enabled = false,
+      enabled = true,
       size = { 20, 20 },
       point = { "RIGHT", "LEFT", -6, 0 },
     },

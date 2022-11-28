@@ -56,7 +56,7 @@ L.C.focus = {
     },
 
     icon = {
-      enabled = false,
+      enabled = true,
       size = { 26, 26 },
       point = { "RIGHT", "LEFT", -6, 0 },
     },

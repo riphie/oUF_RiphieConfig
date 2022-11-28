@@ -43,7 +43,7 @@ L.C.player = {
   powerbar = {
     colorPower = true,
 
-    enabled = true,
+    enabled = false,
     size = { 180, 3 },
     point = { "TOP", "BOTTOM", 0, -0.5 },
 

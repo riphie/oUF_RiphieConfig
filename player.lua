@@ -13,12 +13,13 @@ L.C.player = {
     colorThreat = false,
 
     name = {
-      enabled = false,
+      enabled = true,
       size = 12,
-      points = {
-        { "TOPLEFT", 2, 10 },
-        { "TOPRIGHT", -2, 10 },
-      },
+      -- points = {
+      --   { "TOPLEFT", 2, 10 },
+      --   { "TOPRIGHT", -2, 10 },
+      -- },
+      point = { "CENTER", 0, 0 },
       tag = "[oUF_RiphieConfig:status]",
       noshadow = true,
     },

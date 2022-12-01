@@ -47,7 +47,7 @@ L.C.target = {
     colorPower = true,
 
     enabled = true,
-    size = { 180, 3 },
+    size = { 180, 5 },
     point = { "TOP", "BOTTOM", 0, -0.5 },
 
     power = {

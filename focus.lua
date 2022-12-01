@@ -3,7 +3,7 @@ local A, L = ...
 L.C.focus = {
   enabled = true,
 
-  size = { 180, 30 },
+  size = { 150, 30 },
   point = { "CENTER", UIParent, "CENTER", -500, 0 },
   scale = 1 * L.C.globalscale,
 
@@ -32,6 +32,14 @@ L.C.focus = {
       tag = "[oUF_Riphie:health]",
       noshadow = true,
     },
+
+    healthperc = {
+      enabled = true,
+      size = 13,
+      point = { "RIGHT", -5, 0 },
+      tag = "[perhp]%",
+      noshadow = true,
+    },
   },
 
   raidicon = {
@@ -42,7 +50,7 @@ L.C.focus = {
 
   castbar = {
     enabled = true,
-    size = { 180, 20 },
+    size = { 150, 20 },
     point = { "TOP", "BOTTOM", 0, -5 },
 
     name = {

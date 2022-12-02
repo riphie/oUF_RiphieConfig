@@ -3,8 +3,8 @@ local A, L = ...
 L.C.party = {
   enabled = true,
 
-  size = { 80, 20 },
-  point = { "TOPLEFT", 20, -20 },
+  size = { 150, 25 },
+  point = { "CENTER", "UIParent", "CENTER", -425, 0 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -16,13 +16,12 @@ L.C.party = {
 
     name = {
       enabled = true,
-      size = 11,
+      size = 12,
       points = {
-        { "LEFT", 2, 0 },
-        { "RIGHT", -2, 0 },
+        { "LEFT", 5, 0 },
+        { "RIGHT", 5, 0 },
       },
-      align = "CENTER",
-      tag = "[name]",
+      tag = "[oUF_RiphieConfig:name]",
       noshadow = true,
     },
 
@@ -49,8 +48,8 @@ L.C.party = {
 
   raidicon = {
     enabled = true,
-    size = { 18, 18 },
-    point = { "CENTER", "LEFT", 0, 0 },
+    size = { 15, 15 },
+    point = { "CENTER", "RIGHT", -12, 0 },
   },
 
   debuffs = {

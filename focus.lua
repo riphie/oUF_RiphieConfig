@@ -4,7 +4,7 @@ L.C.focus = {
   enabled = true,
 
   size = { 150, 30 },
-  point = { "CENTER", UIParent, "CENTER", -500, 0 },
+  point = { "CENTER", UIParent, "CENTER", -700, 0 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {

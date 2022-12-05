@@ -3,7 +3,7 @@ local A, L = ...
 L.C.target = {
   enabled = true,
 
-  size = { 180, 30 },
+  size = { 200, 30 },
   point = { "LEFT", UIParent, "CENTER", 160, -200 },
   scale = 1 * L.C.globalscale,
 
@@ -51,7 +51,7 @@ L.C.target = {
     colorPower = true,
 
     enabled = true,
-    size = { 180, 5 },
+    size = { 200, 3 },
     point = { "TOP", "BOTTOM", 0, -0.5 },
 
     power = {

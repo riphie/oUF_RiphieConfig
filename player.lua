@@ -3,7 +3,7 @@ local A, L = ...
 L.C.player = {
   enabled = true,
 
-  size = { 180, 30 },
+  size = { 200, 30 },
   point = { "RIGHT", UIParent, "CENTER", -160, -200 },
   scale = 1 * L.C.globalscale,
 
@@ -95,7 +95,7 @@ L.C.player = {
     },
 
     safezone = {
-      enabled = true,
+      enabled = false,
     },
   },
 }

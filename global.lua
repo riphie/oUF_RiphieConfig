@@ -17,8 +17,8 @@ L.C.backdrop = {
 }
 
 L.C.textures = {
-  statusbar = L.C.mediapath .. "Skullflower1",
-  statusbarBG = L.C.mediapath .. "Skullflower1",
+  statusbar = L.C.mediapath .. "SkullflowerNeon",
+  statusbarBG = L.C.mediapath .. "SkullflowerNeon",
 
   absorb = L.C.mediapath .. "absorb",
 }

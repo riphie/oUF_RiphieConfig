@@ -17,8 +17,9 @@ L.C.backdrop = {
 }
 
 L.C.textures = {
-  statusbar = L.C.mediapath .. "Skullflower2",
-  statusbarBG = L.C.mediapath .. "Skullflower2",
+  statusbar = L.C.mediapath .. "Skullflower3",
+  statusbarBG = L.C.mediapath .. "Skullflower3",
+  absorb = L.C.mediapath .. "absorb",
 }
 
 L.C.colors = {}
@@ -29,11 +30,16 @@ L.C.colors.healthbar = {
   default = { 0, 1, 0 },
   defaultBG = { 0 * L.C.colors.bgMultiplier, 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
 
+  own = { 0, 1, 0, 0.5 },
+  other = { 0, 1, 0.4, 0.5 },
+
   threat = { 1, 0, 0 },
   threatBG = { 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
 
   threatInvers = { 0, 1, 0 },
   threatInversBG = { 0 * L.C.colors.bgMultiplier, 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
+
+  absorb = { 0.1, 1, 1, 0.7 },
 }
 
 L.C.colors.castbar = {

@@ -21,5 +21,8 @@ if LibStub then
   LSM:Register("statusbar", "Skullflower 4", "Interface\\AddOns\\" .. A .. "\\media\\Skullflower4")
   LSM:Register("statusbar", "Skullflower 5", "Interface\\AddOns\\" .. A .. "\\media\\Skullflower5")
   LSM:Register("statusbar", "Skullflower Light", "Interface\\AddOns\\" .. A .. "\\media\\SkullflowerLight")
+  LSM:Register("statusbar", "Skullflower Neon", "Interface\\AddOns\\" .. A .. "\\media\\SkullflowerNeon")
   LSM:Register("statusbar", "Skullflower Gradient", "Interface\\AddOns\\" .. A .. "\\media\\SkullflowerGradient")
+  LSM:Register("statusbar", "Skullflower Gradient 1", "Interface\\AddOns\\" .. A .. "\\media\\SkullflowerGradient1")
+  LSM:Register("statusbar", "Skullflower Gradient 2", "Interface\\AddOns\\" .. A .. "\\media\\SkullflowerGradient2")
 end

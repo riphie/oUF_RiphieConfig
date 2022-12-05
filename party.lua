@@ -3,7 +3,7 @@ local A, L = ...
 L.C.party = {
   enabled = true,
 
-  size = { 150, 25 },
+  size = { 150, 30 },
   point = { "CENTER", "UIParent", "CENTER", -425, 0 },
   scale = 1 * L.C.globalscale,
 

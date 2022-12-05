@@ -12,8 +12,8 @@ local cvars = {
   nameplateSelectedScale = 1,
   nameplateLargerScale = 1,
   nameplateShowFriendlyNPCs = 0,
-  nameplateMinAlpha = 1,
-  nameplateMaxAlpha = 1,
+  nameplateMinAlpha = 0.6,
+  nameplateMaxAlpha = 0.6,
   nameplateMinAlphaDistance = 0,
   nameplateMaxAlphaDistance = 40,
   nameplateSelectedAlpha = 1,
@@ -36,7 +36,7 @@ end
 L.C.nameplate = {
   enabled = true,
 
-  size = { 170, 15 },
+  size = { 150, 15 },
   point = { "CENTER" },
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 
@@ -115,7 +115,7 @@ L.C.nameplate = {
 
   raidicon = {
     enabled = true,
-    size = { 18, 18 },
-    point = { "CENTER", "TOP", 0, 0 },
+    size = { 25, 25 },
+    point = { "RIGHT", "LEFT", 0, 0 },
   },
 }

@@ -43,6 +43,10 @@ L.C.target = {
     },
   },
 
+  absorbbar = {
+    enabled = true,
+  },
+
   powerbar = {
     colorPower = true,
 

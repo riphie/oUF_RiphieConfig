@@ -37,6 +37,10 @@ L.C.player = {
     },
   },
 
+  absorbbar = {
+    enabled = true,
+  },
+
   powerbar = {
     colorPower = true,
 

@@ -4,7 +4,7 @@ L.C.boss = {
   enabled = true,
 
   size = { 130, 30 },
-  point = { "CENTER", UIParent, "CENTER", 450, 100 },
+  point = { "CENTER", UIParent, "CENTER", 450, 300 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -95,5 +95,8 @@ SlashCmdList["TESTBOSS"] = function()
   oUF_RiphieBoss4:Show()
   oUF_RiphieBoss4.Hide = function() end
   oUF_RiphieBoss4.unit = "player"
+  oUF_RiphieBoss5:Show()
+  oUF_RiphieBoss5.Hide = function() end
+  oUF_RiphieBoss5.unit = "player"
 end
 SLASH_TESTBOSS1 = "/TestBoss"

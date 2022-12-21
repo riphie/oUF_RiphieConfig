@@ -3,8 +3,8 @@ local A, L = ...
 L.C.focus = {
   enabled = true,
 
-  size = { 150, 30 },
-  point = { "CENTER", UIParent, "CENTER", -700, 0 },
+  size = { 150, 15 },
+  point = { "RIGHT", UIParent, "CENTER", -210, -300 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -18,8 +18,8 @@ L.C.focus = {
       enabled = true,
       size = 12,
       points = {
-        { "TOPLEFT", 2, 15 },
-        { "TOPRIGHT", -2, 15 },
+        { "TOPLEFT", 2, 20 },
+        { "TOPRIGHT", -2, 20 },
       },
       tag = "[name]",
       noshadow = true,
@@ -27,16 +27,16 @@ L.C.focus = {
 
     health = {
       enabled = true,
-      size = 22,
-      point = { "LEFT", 5, 0 },
+      size = 18,
+      point = { "LEFT", 5, 5 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,
     },
 
     healthperc = {
       enabled = true,
-      size = 13,
-      point = { "RIGHT", -5, 0 },
+      size = 18,
+      point = { "RIGHT", -5, 5 },
       tag = "[perhp]%",
       noshadow = true,
     },
@@ -64,7 +64,7 @@ L.C.focus = {
     },
 
     icon = {
-      enabled = true,
+      enabled = false,
       size = { 26, 26 },
       point = { "RIGHT", "LEFT", -6, 0 },
     },

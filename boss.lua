@@ -3,7 +3,7 @@ local A, L = ...
 L.C.boss = {
   enabled = true,
 
-  size = { 130, 30 },
+  size = { 130, 15 },
   point = { "CENTER", UIParent, "CENTER", 450, 300 },
   scale = 1 * L.C.globalscale,
 

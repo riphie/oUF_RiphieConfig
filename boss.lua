@@ -3,7 +3,7 @@ local A, L = ...
 L.C.boss = {
   enabled = true,
 
-  size = { 130, 15 },
+  size = { 130, 20 },
   point = { "CENTER", UIParent, "CENTER", 450, 300 },
   scale = 1 * L.C.globalscale,
 
@@ -96,8 +96,5 @@ SlashCmdList["TESTBOSS"] = function()
   oUF_RiphieBoss4:Show()
   oUF_RiphieBoss4.Hide = function() end
   oUF_RiphieBoss4.unit = "player"
-  oUF_RiphieBoss5:Show()
-  oUF_RiphieBoss5.Hide = function() end
-  oUF_RiphieBoss5.unit = "player"
 end
-SLASH_TESTBOSS1 = "/TestBoss"
+SLASH_TESTBOSS1 = "/testboss"

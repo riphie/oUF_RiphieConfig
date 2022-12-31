@@ -23,7 +23,7 @@ L.C.player = {
     health = {
       enabled = true,
       size = 18,
-      point = { "LEFT", 5, 5 },
+      point = { "LEFT", 5, 8 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,
     },
@@ -31,7 +31,7 @@ L.C.player = {
     healthperc = {
       enabled = true,
       size = 18,
-      point = { "RIGHT", -5, 5 },
+      point = { "RIGHT", -5, 8 },
       tag = "[perhp]%",
       noshadow = true,
     },

@@ -70,8 +70,10 @@ L.C.target = {
 
   castbar = {
     enabled = true,
-    size = { 300, 20 },
-    point = { "CENTER", UIParent, "CENTER", 0, 50 },
+    -- size = { 300, 20 },
+    -- point = { "CENTER", UIParent, "CENTER", 0, 50 },
+    size = { 200, 20 },
+    point = { "CENTER", "oUF_RiphieTarget", "CENTER", 0, -55 },
 
     name = {
       enabled = true,

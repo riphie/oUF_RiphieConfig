@@ -65,7 +65,7 @@ L.C.nameplate = {
 
   castbar = {
     enabled = true,
-    size = { 160, 20 },
+    size = { 180, 20 },
     point = { "TOP", "BOTTOM", 0, -5 },
 
     name = {
@@ -109,7 +109,7 @@ L.C.nameplate = {
     initialAnchor = "TOPLEFT",
     growthX = "RIGHT",
     growthY = "UP",
-    disableCooldown = false,
+    disableCooldown = true,
     filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
     CustomFilter = CustomFilterDebuffs,
   },

@@ -114,5 +114,6 @@ L.C.target = {
     growthX = "RIGHT",
     growthY = "DOWN",
     disableCooldown = true,
+    onlyShowPlayer = true,
   },
 }

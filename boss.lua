@@ -64,14 +64,15 @@ L.C.boss = {
   debuffs = {
     enabled = false,
     size = 22,
-    point = { "TOPLEFT", "BOTTOMLEFT", 0, -14 },
+    point = { "LEFT", "RIGHT", 0, 0 },
     num = 5,
     cols = 5,
     spacing = 5,
     initialAnchor = "TOPLEFT",
     growthX = "RIGHT",
     growthY = "DOWN",
-    disableCooldown = true,
+    disableCooldown = false,
+    onlyShowPlayer = true,
   },
 
   setup = {

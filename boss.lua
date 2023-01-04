@@ -3,8 +3,8 @@ local A, L = ...
 L.C.boss = {
   enabled = true,
 
-  size = { 130, 20 },
-  point = { "CENTER", UIParent, "CENTER", 450, 300 },
+  size = { 150, 25 },
+  point = { "CENTER", UIParent, "CENTER", 450, 50 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -28,7 +28,7 @@ L.C.boss = {
 
   powerbar = {
     enabled = true,
-    size = { 130, 3 },
+    size = { 150, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
     colorPower = true,
   },
@@ -40,7 +40,7 @@ L.C.boss = {
   },
 
   castbar = {
-    enabled = true,
+    enabled = false,
     size = { 130, 20 },
     point = { "TOP", "BOTTOM", 0, -14 },
 
@@ -68,7 +68,7 @@ L.C.boss = {
     num = 5,
     cols = 5,
     spacing = 5,
-    initialAnchor = "TOPLEFT",
+    initialAnchor = "LEFT",
     growthX = "RIGHT",
     growthY = "DOWN",
     disableCooldown = false,
@@ -79,7 +79,7 @@ L.C.boss = {
     point = "TOP",
     relativePoint = "BOTTOM",
     xOffset = 0,
-    yOffset = -40,
+    yOffset = -20,
   },
 }
 

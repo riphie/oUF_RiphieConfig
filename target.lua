@@ -73,7 +73,7 @@ L.C.target = {
     -- size = { 300, 20 },
     -- point = { "CENTER", UIParent, "CENTER", 0, 50 },
     size = { 200, 20 },
-    point = { "CENTER", "oUF_RiphieTarget", "CENTER", 0, -55 },
+    point = { "TOP", "BOTTOM", 0, -8 },
 
     name = {
       enabled = true,
@@ -93,7 +93,7 @@ L.C.target = {
   },
 
   buffs = {
-    enabled = true,
+    enabled = false,
     size = 22,
     point = { "BOTTOMLEFT", "RIGHT", 10, 5 },
     num = 40,
@@ -106,7 +106,7 @@ L.C.target = {
   },
 
   debuffs = {
-    enabled = true,
+    enabled = false,
     size = 22,
     point = { "TOPLEFT", "RIGHT", 8, -5 },
     num = 40,

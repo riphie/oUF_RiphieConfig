@@ -3,7 +3,7 @@ local A, L = ...
 L.C.target = {
   enabled = true,
 
-  size = { 200, 15 },
+  size = { 200, 30 },
   point = { "LEFT", UIParent, "CENTER", 160, -160 },
   scale = 1 * L.C.globalscale,
 
@@ -19,8 +19,8 @@ L.C.target = {
       enabled = true,
       size = 12,
       points = {
-        { "TOPLEFT", 0, 20 },
-        { "TOPRIGHT", 0, 20 },
+        { "TOPLEFT", 0, 18 },
+        { "TOPRIGHT", 0, 18 },
       },
       tag = "[oUF_RiphieConfig:name]",
       noshadow = true,
@@ -29,7 +29,8 @@ L.C.target = {
     health = {
       enabled = true,
       size = 18,
-      point = { "RIGHT", -5, 5 },
+      -- point = { "RIGHT", -5, 5 },
+      point = { "RIGHT", -5, 0 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,
     },
@@ -37,7 +38,8 @@ L.C.target = {
     healthperc = {
       enabled = true,
       size = 18,
-      point = { "LEFT", 5, 5 },
+      -- point = { "LEFT", 5, 5 },
+      point = { "LEFT", 5, 0 },
       tag = "[perhp]%",
       noshadow = true,
     },

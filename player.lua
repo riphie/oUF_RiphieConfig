@@ -3,7 +3,7 @@ local A, L = ...
 L.C.player = {
   enabled = true,
 
-  size = { 200, 15 },
+  size = { 200, 30 },
   point = { "RIGHT", UIParent, "CENTER", -160, -160 },
   scale = 1 * L.C.globalscale,
 
@@ -23,7 +23,8 @@ L.C.player = {
     health = {
       enabled = true,
       size = 18,
-      point = { "LEFT", 5, 8 },
+      -- point = { "LEFT", 5, 8 },
+      point = { "LEFT", 5, 0 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,
     },
@@ -31,7 +32,8 @@ L.C.player = {
     healthperc = {
       enabled = true,
       size = 18,
-      point = { "RIGHT", -5, 8 },
+      -- point = { "RIGHT", -5, 8 },
+      point = { "RIGHT", -5, 0 },
       tag = "[perhp]%",
       noshadow = true,
     },

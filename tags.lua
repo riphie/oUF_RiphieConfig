@@ -14,9 +14,9 @@ L.C.tagMethods["oUF_RiphieConfig:name"] = function(unit, ...)
   local class = UnitClassification(unit)
 
   if class == "elite" then
-    return "++ " .. name
+    return name .. " ++"
   elseif class == "rare" or class == "rareelite" then
-    return "+ " .. name
+    return name .. " +"
   else
     return name
   end

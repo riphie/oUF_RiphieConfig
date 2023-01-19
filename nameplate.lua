@@ -12,8 +12,8 @@ local cvars = {
   nameplateSelectedScale = 1,
   nameplateLargerScale = 1,
   nameplateShowFriendlyNPCs = 0,
-  nameplateMinAlpha = 0.5,
-  nameplateMaxAlpha = 0.5,
+  nameplateMinAlpha = 0.3,
+  nameplateMaxAlpha = 0.3,
   nameplateMinAlphaDistance = 0,
   nameplateMaxAlphaDistance = 40,
   nameplateSelectedAlpha = 1,
@@ -36,7 +36,7 @@ end
 L.C.nameplate = {
   enabled = true,
 
-  size = { 180, 20 },
+  size = { 180, 25 },
   point = { "CENTER" },
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 
@@ -51,13 +51,12 @@ L.C.nameplate = {
 
     name = {
       enabled = true,
-      size = 15,
-      -- points = {
-      --   { "TOPLEFT", 0, 15 },
-      --   { "TOPRIGHT", 0, 15 },
-      -- },
-      point = { "CENTER", 0, 8 },
-      align = "CENTER",
+      size = 13,
+      points = {
+        { "LEFT", 5, 0 },
+        { "RIGHT", 5, 0 },
+      },
+      align = "LEFT",
       tag = "[name]|r",
       noshadow = true,
     },

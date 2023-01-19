@@ -29,7 +29,6 @@ L.C.target = {
     health = {
       enabled = true,
       size = 18,
-      -- point = { "RIGHT", -5, 5 },
       point = { "RIGHT", -5, 0 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,
@@ -38,7 +37,6 @@ L.C.target = {
     healthperc = {
       enabled = true,
       size = 18,
-      -- point = { "LEFT", 5, 5 },
       point = { "LEFT", 5, 0 },
       tag = "[perhp]%",
       noshadow = true,
@@ -72,8 +70,6 @@ L.C.target = {
 
   castbar = {
     enabled = true,
-    -- size = { 300, 20 },
-    -- point = { "CENTER", UIParent, "CENTER", 0, 50 },
     size = { 200, 20 },
     point = { "TOP", "BOTTOM", 0, -8 },
 

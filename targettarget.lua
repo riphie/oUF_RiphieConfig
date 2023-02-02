@@ -4,7 +4,7 @@ L.C.targettarget = {
   enabled = true,
 
   size = { 80, 20 },
-  point = { "LEFT", "oUF_RiphieTarget", "RIGHT", 10, 0 },
+  point = { "BOTTOMRIGHT", "oUF_RiphieTarget", "TOPRIGHT", 0, 5 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {

@@ -91,8 +91,8 @@ L.C.target = {
   },
 
   buffs = {
-    enabled = false,
-    size = 22,
+    enabled = true,
+    size = 25,
     point = { "BOTTOMLEFT", "RIGHT", 10, 5 },
     num = 40,
     cols = 8,
@@ -104,8 +104,8 @@ L.C.target = {
   },
 
   debuffs = {
-    enabled = false,
-    size = 22,
+    enabled = true,
+    size = 25,
     point = { "TOPLEFT", "RIGHT", 8, -5 },
     num = 40,
     cols = 8,

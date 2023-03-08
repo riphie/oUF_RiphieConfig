@@ -1,5 +1,8 @@
 local A, L = ...
 
+local LibStub = LibStub
+local LSM = LibStub("LibSharedMedia-3.0")
+
 L.C.mediapath = "interface\\addons\\" .. A .. "\\media\\"
 
 L.C.globalscale = 1
@@ -17,8 +20,8 @@ L.C.backdrop = {
 }
 
 L.C.textures = {
-  statusbar = L.C.mediapath .. "SkullflowerGradient2",
-  statusbarBG = L.C.mediapath .. "SkullflowerGradient2",
+  statusbar = LSM:Fetch("statusbar", "SkullflowerGradient2"),
+  statusbarBG = LSM:Fetch("statusbar", "SkullflowerGradient2"),
 
   absorb = L.C.mediapath .. "absorb",
 }

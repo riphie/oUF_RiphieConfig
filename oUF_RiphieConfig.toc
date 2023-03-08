@@ -1,6 +1,7 @@
 ## Interface: 100000
 ## Author: Riphie
 ## Title: oUF_RiphieConfig
+## RequiredDeps: SharedMedia_Riphie
 
 init.lua
 global.lua

@@ -3,7 +3,7 @@ local A, L = ...
 L.C.focus = {
   enabled = true,
 
-  size = { 150, 15 },
+  size = { 150, 20 },
   point = { "RIGHT", UIParent, "CENTER", -210, -300 },
   scale = 1 * L.C.globalscale,
 
@@ -27,16 +27,16 @@ L.C.focus = {
 
     health = {
       enabled = true,
-      size = 18,
-      point = { "LEFT", 5, 5 },
+      size = 12,
+      point = { "LEFT", 5, 0 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,
     },
 
     healthperc = {
       enabled = true,
-      size = 18,
-      point = { "RIGHT", -5, 5 },
+      size = 12,
+      point = { "RIGHT", -5, 0 },
       tag = "[perhp]%",
       noshadow = true,
     },

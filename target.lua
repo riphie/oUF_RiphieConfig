@@ -3,8 +3,8 @@ local A, L = ...
 L.C.target = {
   enabled = true,
 
-  size = { 200, 30 },
-  point = { "LEFT", UIParent, "CENTER", 160, -160 },
+  size = { 180, 30 },
+  point = { "LEFT", UIParent, "CENTER", 140, -160 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -28,7 +28,7 @@ L.C.target = {
 
     health = {
       enabled = true,
-      size = 18,
+      size = 12,
       point = { "RIGHT", -5, 0 },
       tag = "[oUF_Riphie:health]",
       noshadow = true,
@@ -36,7 +36,7 @@ L.C.target = {
 
     healthperc = {
       enabled = true,
-      size = 18,
+      size = 12,
       point = { "LEFT", 5, 0 },
       tag = "[perhp]%",
       noshadow = true,
@@ -51,7 +51,7 @@ L.C.target = {
     colorPower = true,
 
     enabled = true,
-    size = { 200, 3 },
+    size = { 180, 3 },
     point = { "TOP", "BOTTOM", 0, -0.5 },
 
     power = {
@@ -70,7 +70,7 @@ L.C.target = {
 
   castbar = {
     enabled = true,
-    size = { 200, 20 },
+    size = { 180, 20 },
     point = { "TOP", "BOTTOM", 0, -8 },
 
     name = {

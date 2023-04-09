@@ -1,5 +1,20 @@
 local A, L = ...
 
+function dump(o)
+  if type(o) == "table" then
+    local s = "{ "
+    for k, v in pairs(o) do
+      if type(k) ~= "number" then
+        k = '"' .. k .. '"'
+      end
+      s = s .. "[" .. k .. "] = " .. dump(v) .. ","
+    end
+    return s .. "} "
+  else
+    return tostring(o)
+  end
+end
+
 local cvars = {
   nameplateMinScale = 1,
   nameplateMaxScale = 1,
@@ -21,16 +36,20 @@ local cvars = {
 }
 L.C.NamePlateCVars = cvars
 
-local function CustomFilterBuffs(...)
-  local element, unit, button, name, texture, count, debuffType, duration, expiration, caster, isStealable, nameplateShowSelf, spellID, canApply, isBossDebuff, casterIsPlayer, nameplateShowAll, timeMod, effect1, effect2, effect3 =
-    ...
-  return nameplateShowSelf or nameplateShowAll or (caster == "player" or caster == "pet" or caster == "vehicle")
+local function FilterAuraBuffs(element, unit, data)
+  local nameplateShowSelf = data.nameplateShowSelf
+  local nameplateShowAll = data.nameplateShowAll
+  local isFromPlayerOrPlayerPet = data.isFromPlayerOrPlayerPet
+
+  return nameplateShowSelf or nameplateShowAll or isFromPlayerOrPet
 end
 
-local function CustomFilterDebuffs(...)
-  local element, unit, button, name, texture, count, debuffType, duration, expiration, caster, isStealable, nameplateShowSelf, spellID, canApply, isBossDebuff, casterIsPlayer, nameplateShowAll, timeMod, effect1, effect2, effect3 =
-    ...
-  return nameplateShowSelf or nameplateShowAll or (caster == "player" or caster == "pet" or caster == "vehicle")
+local function FilterAuraDebuffs(element, unit, data)
+  local nameplateShowSelf = data.nameplateShowSelf
+  local nameplateShowAll = data.nameplateShowAll
+  local isFromPlayerOrPlayerPet = data.isFromPlayerOrPlayerPet
+
+  return nameplateShowSelf or nameplateShowAll or isFromPlayerOrPlayerPet
 end
 
 L.C.nameplate = {
@@ -95,7 +114,7 @@ L.C.nameplate = {
     growthY = "UP",
     disableCooldown = true,
     filter = "HELPFUL|INCLUDE_NAME_PLATE_ONLY",
-    CustomFilter = CustomFilterBuffs,
+    FilterAura = FilterAuraBuffs,
   },
 
   debuffs = {
@@ -110,7 +129,7 @@ L.C.nameplate = {
     growthY = "UP",
     disableCooldown = false,
     filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
-    CustomFilter = CustomFilterDebuffs,
+    FilterAura = FilterAuraDebuffs,
   },
 
   raidicon = {

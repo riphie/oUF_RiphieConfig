@@ -4,7 +4,7 @@ L.C.pet = {
   enabled = true,
 
   size = { 80, 20 },
-  point = { "TOPLEFT", "oUF_RiphiePlayer", "BOTTOMLEFT", 0, -10 },
+  point = { "RIGHT", "oUF_RiphiePlayer", "LEFT", -10, 0 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {

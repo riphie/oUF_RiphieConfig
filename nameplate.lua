@@ -39,8 +39,9 @@ end
 
 L.C.nameplate = {
   enabled = true,
+  friendly_only_name = true,
 
-  size = { 180, 20 },
+  size = { 180, 15 },
   point = { "CENTER" },
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 
@@ -55,10 +56,10 @@ L.C.nameplate = {
 
     name = {
       enabled = true,
-      size = 13,
+      size = 12,
       points = {
-        { "LEFT", 5, 0 },
-        { "RIGHT", 5, 0 },
+        { "LEFT", 5, 1 },
+        { "RIGHT", 5, 1 },
       },
       align = "LEFT",
       tag = "[name]|r",
@@ -105,7 +106,7 @@ L.C.nameplate = {
   debuffs = {
     enabled = true,
     size = 25,
-    point = { "BOTTOMLEFT", "TOPLEFT", 0, 10 },
+    point = { "BOTTOMLEFT", "TOPLEFT", 0, 5 },
     num = 5,
     cols = 5,
     spacing = 5,

@@ -4,7 +4,7 @@ L.C.focus = {
   enabled = true,
 
   size = { 150, 20 },
-  point = { "RIGHT", UIParent, "CENTER", -210, -300 },
+  point = { "RIGHT", UIParent, "CENTER", -210, -308 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -18,10 +18,10 @@ L.C.focus = {
       enabled = true,
       size = 12,
       points = {
-        { "TOPLEFT", 2, 20 },
-        { "TOPRIGHT", -2, 20 },
+        { "TOPLEFT", 0, 18 },
+        { "TOPRIGHT", 0, 18 },
       },
-      tag = "[name]",
+      tag = "[oUF_RiphieConfig:name]",
       noshadow = true,
     },
 
@@ -51,7 +51,7 @@ L.C.focus = {
   castbar = {
     enabled = true,
     size = { 150, 20 },
-    point = { "TOP", "BOTTOM", 0, -5 },
+    point = { "TOP", "BOTTOM", 0, -6 },
 
     name = {
       enabled = true,

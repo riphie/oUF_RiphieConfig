@@ -4,7 +4,7 @@ L.C.target = {
   enabled = true,
 
   size = { 180, 30 },
-  point = { "LEFT", UIParent, "CENTER", 200, -200 },
+  point = { "LEFT", UIParent, "CENTER", 200, -172 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -71,7 +71,7 @@ L.C.target = {
   castbar = {
     enabled = true,
     size = { 180, 20 },
-    point = { "TOP", "BOTTOM", 0, -8 },
+    point = { "TOP", "BOTTOM", 0, -9 },
 
     name = {
       enabled = true,
@@ -92,8 +92,8 @@ L.C.target = {
 
   buffs = {
     enabled = true,
-    size = 20,
-    point = { "BOTTOMLEFT", "RIGHT", 10, 5 },
+    size = 20.5,
+    point = { "BOTTOMLEFT", "RIGHT", 4, 4 },
     num = 40,
     cols = 8,
     spacing = 5,
@@ -105,8 +105,8 @@ L.C.target = {
 
   debuffs = {
     enabled = true,
-    size = 20,
-    point = { "TOPLEFT", "RIGHT", 8, -5 },
+    size = 20.5,
+    point = { "TOPLEFT", "RIGHT", 4, -4.5 },
     num = 40,
     cols = 8,
     spacing = 5,

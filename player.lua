@@ -4,7 +4,7 @@ L.C.player = {
   enabled = true,
 
   size = { 180, 30 },
-  point = { "RIGHT", UIParent, "CENTER", -200, -200 },
+  point = { "RIGHT", UIParent, "CENTER", -200, -172 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {

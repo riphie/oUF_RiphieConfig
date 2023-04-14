@@ -3,8 +3,8 @@ local A, L = ...
 L.C.party = {
   enabled = true,
 
-  size = { 150, 30 },
-  point = { "CENTER", "UIParent", "CENTER", -425, 0 },
+  size = { 150, 25 },
+  point = { "CENTER", "UIParent", "CENTER", -450, -9 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -74,6 +74,6 @@ L.C.party = {
     showRaid = false,
     point = "TOP",
     xOffset = 0,
-    yOffset = -5,
+    yOffset = -4,
   },
 }

@@ -4,7 +4,7 @@ L.C.boss = {
   enabled = true,
 
   size = { 150, 25 },
-  point = { "CENTER", UIParent, "CENTER", 450, 50 },
+  point = { "CENTER", UIParent, "CENTER", 500, 99.5 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -17,10 +17,10 @@ L.C.boss = {
       enabled = true,
       size = 12,
       points = {
-        { "LEFT", 2, 0 },
-        { "RIGHT", -2, 0 },
+        { "LEFT", 5, 0 },
+        { "RIGHT", -5, 0 },
       },
-      align = "CENTER",
+      align = "LEFT",
       tag = "[name]",
       noshadow = true,
     },
@@ -79,7 +79,7 @@ L.C.boss = {
     point = "TOP",
     relativePoint = "BOTTOM",
     xOffset = 0,
-    yOffset = -20,
+    yOffset = -25,
   },
 }
 
@@ -96,5 +96,8 @@ SlashCmdList["TESTBOSS"] = function()
   oUF_RiphieBoss4:Show()
   oUF_RiphieBoss4.Hide = function() end
   oUF_RiphieBoss4.unit = "player"
+  oUF_RiphieBoss5:Show()
+  oUF_RiphieBoss5.Hide = function() end
+  oUF_RiphieBoss5.unit = "player"
 end
 SLASH_TESTBOSS1 = "/testboss"

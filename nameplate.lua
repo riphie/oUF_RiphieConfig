@@ -41,7 +41,7 @@ L.C.nameplate = {
   enabled = true,
   friendly_only_name = true,
 
-  size = { 180, 20 },
+  size = { 180, 25 },
   point = { "CENTER" },
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 
@@ -120,7 +120,7 @@ L.C.nameplate = {
 
   raidicon = {
     enabled = true,
-    size = { 40, 40 },
-    point = { "BOTTOM", "TOP", 0, 40 },
+    size = { 30, 30 },
+    point = { "RIGHT", "LEFT", -5, 0 },
   },
 }

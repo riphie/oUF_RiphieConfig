@@ -23,7 +23,7 @@ L.C.textures = {
   statusbar = LSM:Fetch("statusbar", "SkullflowerGradient2"),
   statusbarBG = LSM:Fetch("statusbar", "SkullflowerGradient2"),
 
-  absorb = L.C.mediapath .. "absorb",
+  absorb = LSM:Fetch("statusbar", "RiphieAbsorb"),
 }
 
 L.C.colors = {}

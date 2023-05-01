@@ -90,7 +90,7 @@ L.C.nameplate = {
 
   buffs = {
     enabled = false,
-    size = 22,
+    size = 20,
     point = { "BOTTOM", "TOP", 0, 25 },
     num = 10,
     cols = 4,
@@ -105,7 +105,7 @@ L.C.nameplate = {
 
   debuffs = {
     enabled = true,
-    size = 25,
+    size = 20,
     point = { "BOTTOMLEFT", "TOPLEFT", 0, 5 },
     num = 5,
     cols = 5,

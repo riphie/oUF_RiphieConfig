@@ -53,3 +53,19 @@ L.C.colors.castbar = {
   shielded = { 0.7, 0.7, 0.7 },
   shieldedBG = { 0.7 * L.C.colors.bgMultiplier, 0.7 * L.C.colors.bgMultiplier, 0.7 * L.C.colors.bgMultiplier },
 }
+
+-- override oUF threat colouring
+oUF.colors.threat[0] = { 0.1, 0.7, 0.9 }
+oUF.colors.threat[1] = { 0.4, 0.1, 0.9 }
+oUF.colors.threat[2] = { 0.9, 0.1, 0.9 }
+oUF.colors.threat[3] = { 0.9, 0.1, 0.4 }
+
+-- override oUF reaction colouring
+oUF.colors.reaction[1] = { 1, 0.12, 0.25 }
+oUF.colors.reaction[2] = { 1, 0.12, 0.25 }
+oUF.colors.reaction[3] = { 1, 0.5, 0.25 }
+oUF.colors.reaction[4] = { 1, 1, 0 }
+oUF.colors.reaction[5] = { 0.26, 1, 0.22 }
+oUF.colors.reaction[6] = { 0.26, 1, 0.22 }
+oUF.colors.reaction[7] = { 0.26, 1, 0.22 }
+oUF.colors.reaction[8] = { 0.26, 1, 0.22 }

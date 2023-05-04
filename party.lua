@@ -14,32 +14,42 @@ L.C.party = {
     colorHealth = true,
     colorThreat = true,
 
-    frequentUpdates = true,
-
     name = {
       enabled = true,
-      size = 12,
       points = {
         { "LEFT", 5, 0 },
         { "RIGHT", 5, 0 },
       },
-      tag = "[oUF_RiphieConfig:name]",
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
       noshadow = true,
+      tag = "[oUF_RiphieConfig:name]",
     },
 
     health = {
       enabled = false,
-      size = 12,
       point = { "RIGHT", -2, 0 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
       tag = "[oUF_Riphie:health]",
     },
+
+    -- TODO: add healthperc
   },
 
   powerbar = {
+    colorPower = true,
+
     enabled = false,
     size = { 180, 5 },
     point = { "TOP", "BOTTOM", 0, -1 },
-    colorPower = true,
+
+    -- TODO: add power
   },
 
   -- TODO: castbar

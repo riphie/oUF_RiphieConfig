@@ -14,26 +14,35 @@ L.C.player = {
 
     name = {
       enabled = true,
-      size = 12,
       point = { "CENTER", 0, 0 },
-      tag = "[oUF_RiphieConfig:status]",
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
       noshadow = true,
+      tag = "[oUF_RiphieConfig:status]",
     },
 
     health = {
       enabled = true,
-      size = 12,
       point = { "LEFT", 5, 0 },
-      tag = "[oUF_Riphie:health]",
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
       noshadow = true,
+      tag = "[oUF_Riphie:health]",
     },
 
     healthperc = {
       enabled = true,
-      size = 12,
       point = { "RIGHT", -5, 0 },
-      tag = "[perhp]%",
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
       noshadow = true,
+      tag = "[perhp]%",
     },
   },
 
@@ -50,16 +59,14 @@ L.C.player = {
 
     power = {
       enabled = false,
-      size = 16,
       point = { "RIGHT", -2, 0 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
       tag = "[perpp]",
     },
-  },
-
-  raidicon = {
-    enabled = true,
-    size = { 18, 18 },
-    point = { "CENTER", "LEFT", 0, 0 },
   },
 
   castbar = {
@@ -69,27 +76,32 @@ L.C.player = {
 
     name = {
       enabled = true,
-      size = 12,
       points = {
         { "LEFT", 2, 0 },
         { "RIGHT", -2, 0 },
       },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
       noshadow = true,
     },
 
     time = {
       enabled = true,
-      size = 12,
       points = {
         { "LEFT", 2, 0 },
         { "RIGHT", -2, 0 },
       },
-      align = "right",
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "RIGHT",
       noshadow = true,
     },
 
     icon = {
-      enabled = false,
+      enabled = true,
       size = { 20, 20 },
       point = { "RIGHT", "LEFT", -6, 0 },
     },
@@ -97,5 +109,11 @@ L.C.player = {
     safezone = {
       enabled = false,
     },
+  },
+
+  raidicon = {
+    enabled = false,
+    size = { 18, 18 },
+    point = { "CENTER", "LEFT", 0, 0 },
   },
 }

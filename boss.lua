@@ -3,8 +3,8 @@ local A, L = ...
 L.C.boss = {
   enabled = true,
 
-  size = { 150, 25 },
-  point = { "CENTER", UIParent, "CENTER", 500, 99.5 },
+  size = { 150, 26.4 },
+  point = { "CENTER", UIParent, "CENTER", 500, 100 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -15,22 +15,105 @@ L.C.boss = {
 
     name = {
       enabled = true,
-      size = 12,
       points = {
         { "LEFT", 5, 0 },
         { "RIGHT", -5, 0 },
       },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
       align = "LEFT",
-      tag = "[name]",
       noshadow = true,
+      tag = "[name]",
+    },
+
+    healthperc = {
+      enabled = true,
+      point = { "RIGHT", -5, 0 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+      tag = "[perhp]%",
     },
   },
 
   powerbar = {
+    colorPower = true,
+
     enabled = true,
     size = { 150, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
-    colorPower = true,
+
+    power = {
+      enabled = false,
+      point = { "LEFT", -2, 0 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+      tag = "[perpp]",
+    },
+  },
+
+  castbar = {
+    enabled = true,
+    size = { 130, 20 },
+    point = { "LEFT", "RIGHT", 5.3, 0.1 },
+
+    name = {
+      enabled = true,
+      points = {
+        { "LEFT", 2, 0 },
+        { "RIGHT", -2, 0 },
+      },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+    },
+
+    icon = {
+      enabled = false,
+      size = { 26, 26 },
+      point = { "LEFT", "RIGHT", 6, 0 },
+    },
+  },
+
+  debuffs = {
+    enabled = true,
+
+    size = 25,
+    point = { "RIGHT", "LEFT", -5, 0.5 },
+    num = 5,
+    cols = 5,
+    spacing = 5.5,
+    initialAnchor = "RIGHT",
+    growthX = "LEFT",
+    growthY = "DOWN",
+    disableCooldown = true,
+    onlyShowPlayer = true,
+
+    duration = {
+      point = { "TOP", 0, 4 },
+      font = L.C.font,
+      size = 10,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+    },
+
+    count = {
+      point = { "BOTTOMRIGHT", 2, -2 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+    },
   },
 
   raidicon = {
@@ -39,65 +122,33 @@ L.C.boss = {
     point = { "CENTER", "LEFT", 0, 0 },
   },
 
-  castbar = {
-    enabled = false,
-    size = { 130, 20 },
-    point = { "TOP", "BOTTOM", 0, -14 },
-
-    name = {
-      enabled = true,
-      size = 12,
-      points = {
-        { "LEFT", 2, 0 },
-        { "RIGHT", -2, 0 },
-      },
-      noshadow = true,
-    },
-
-    icon = {
-      enabled = true,
-      size = { 26, 26 },
-      point = { "RIGHT", "LEFT", -6, 0 },
-    },
-  },
-
-  debuffs = {
-    enabled = false,
-    size = 22,
-    point = { "LEFT", "RIGHT", 0, 0 },
-    num = 5,
-    cols = 5,
-    spacing = 5,
-    initialAnchor = "LEFT",
-    growthX = "RIGHT",
-    growthY = "DOWN",
-    disableCooldown = false,
-    onlyShowPlayer = true,
-  },
-
   setup = {
     point = "TOP",
     relativePoint = "BOTTOM",
     xOffset = 0,
-    yOffset = -25,
+    yOffset = -10.5,
   },
 }
 
 SlashCmdList["TESTBOSS"] = function()
   oUF_RiphieBoss1:Show()
   oUF_RiphieBoss1.Hide = function() end
-  oUF_RiphieBoss1.unit = "player"
+  oUF_RiphieBoss1.unit = "focus"
+
   oUF_RiphieBoss2:Show()
   oUF_RiphieBoss2.Hide = function() end
-  oUF_RiphieBoss2.unit = "player"
+  oUF_RiphieBoss2.unit = "focus"
+
   oUF_RiphieBoss3:Show()
   oUF_RiphieBoss3.Hide = function() end
-  oUF_RiphieBoss3.unit = "player"
+  oUF_RiphieBoss3.unit = "focus"
+
   oUF_RiphieBoss4:Show()
   oUF_RiphieBoss4.Hide = function() end
-  oUF_RiphieBoss4.unit = "player"
+  oUF_RiphieBoss4.unit = "focus"
+
   oUF_RiphieBoss5:Show()
   oUF_RiphieBoss5.Hide = function() end
-  oUF_RiphieBoss5.unit = "player"
+  oUF_RiphieBoss5.unit = "focus"
 end
 SLASH_TESTBOSS1 = "/testboss"

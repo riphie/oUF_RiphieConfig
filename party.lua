@@ -40,6 +40,40 @@ L.C.party = {
     colorPower = true,
   },
 
+  -- TODO: castbar
+
+  debuffs = {
+    enabled = true,
+
+    size = 26,
+    point = { "LEFT", "RIGHT", 5, 0 },
+    num = 5,
+    cols = 5,
+    spacing = 5,
+    initialAnchor = "TOPLEFT",
+    growthX = "RIGHT",
+    growthY = "DOWN",
+    disableCooldown = true,
+
+    duration = {
+      point = { "TOP", 0, 4 },
+      font = L.C.font,
+      size = 10,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+    },
+
+    count = {
+      point = { "BOTTOMRIGHT", 2, -2 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+    },
+  },
+
   readycheck = {
     enabled = true,
     size = { 18, 18 },
@@ -50,19 +84,6 @@ L.C.party = {
     enabled = true,
     size = { 15, 15 },
     point = { "CENTER", "RIGHT", -12, 0 },
-  },
-
-  debuffs = {
-    enabled = false,
-    size = 26,
-    point = { "LEFT", "RIGHT", 5, 0 },
-    num = 5,
-    cols = 5,
-    spacing = 5,
-    initialAnchor = "TOPLEFT",
-    growthX = "RIGHT",
-    growthY = "DOWN",
-    disableCooldown = true,
   },
 
   setup = {

@@ -3,8 +3,6 @@ local A, L = ...
 local LibStub = LibStub
 local LSM = LibStub("LibSharedMedia-3.0")
 
-L.C.mediapath = "interface\\addons\\" .. A .. "\\media\\"
-
 L.C.globalscale = 1
 
 L.C.backdrop = {
@@ -18,6 +16,8 @@ L.C.backdrop = {
   edgeSize = 1,
   insets = { left = 0, right = 0, top = 0, bottom = 0 },
 }
+
+L.C.font = LSM:Fetch("font", "Accidental Presidency")
 
 L.C.textures = {
   statusbar = LSM:Fetch("statusbar", "SkullflowerGradient2"),

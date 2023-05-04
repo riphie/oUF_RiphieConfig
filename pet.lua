@@ -8,6 +8,7 @@ L.C.pet = {
   scale = 1 * L.C.globalscale,
 
   healthbar = {
+    colorDisconnected = false,
     colorReaction = false,
     colorClass = true,
     colorHealth = true,
@@ -15,14 +16,16 @@ L.C.pet = {
 
     name = {
       enabled = true,
-      size = 12,
       points = {
         { "LEFT", 2, 0 },
         { "RIGHT", -2, 0 },
       },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
       align = "CENTER",
-      tag = "[name]",
       noshadow = true,
+      tag = "[name]",
     },
   },
 
@@ -33,11 +36,15 @@ L.C.pet = {
 
     name = {
       enabled = true,
-      size = 11,
       points = {
         { "LEFT", 2, 0 },
         { "RIGHT", -2, 0 },
       },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
     },
 
     icon = {

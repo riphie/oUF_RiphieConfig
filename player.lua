@@ -8,8 +8,10 @@ L.C.player = {
   scale = 1 * L.C.globalscale,
 
   healthbar = {
+    colorDisconnected = false,
+    colorReaction = false,
     colorClass = true,
-    colorHealth = true,
+    colorHealth = false,
     colorThreat = false,
 
     name = {

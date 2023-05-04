@@ -8,12 +8,11 @@ L.C.target = {
   scale = 1 * L.C.globalscale,
 
   healthbar = {
-    colorDisconnected = false,
+    colorDisconnected = true,
+    colorReaction = true,
     colorClass = true,
-    colorReaction = false,
     colorHealth = true,
-    colorThreat = false,
-    colorThreatInvers = false,
+    colorThreat = true,
 
     name = {
       enabled = true,

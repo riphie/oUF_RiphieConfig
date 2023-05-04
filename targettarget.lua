@@ -9,9 +9,10 @@ L.C.targettarget = {
 
   healthbar = {
     colorDisconnected = true,
-    colorReaction = false,
+    colorReaction = true,
     colorClass = true,
     colorHealth = true,
+    colorThreat = true,
 
     name = {
       enabled = true,

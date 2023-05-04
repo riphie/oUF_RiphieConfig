@@ -18,10 +18,12 @@ L.C.raid = {
 
   healthbar = {
     colorDisconnected = true,
-    colorClass = true,
     colorReaction = true,
+    colorClass = true,
     colorHealth = true,
     colorThreat = true,
+
+    frequentUpdates = true,
 
     name = {
       enabled = true,

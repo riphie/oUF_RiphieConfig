@@ -61,6 +61,12 @@ L.C.nameplate = {
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 
   healthbar = {
+    colorDisconnected = false,
+    colorReaction = false,
+    colorClass = false,
+    colorHealth = false,
+    colorThreat = false,
+
     frequentUpdates = true,
 
     name = {

@@ -8,9 +8,12 @@ L.C.boss = {
   scale = 1 * L.C.globalscale,
 
   healthbar = {
+    colorDisconnected = false,
     colorReaction = false,
     colorClass = true,
     colorHealth = true,
+    colorThreat = false,
+
     frequentUpdates = true,
 
     name = {

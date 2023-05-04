@@ -15,6 +15,8 @@ L.C.focus = {
     colorHealth = true,
     colorThreat = true,
 
+    frequentUpdates = true,
+
     name = {
       enabled = true,
       size = 12,

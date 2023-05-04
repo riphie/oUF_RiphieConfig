@@ -23,18 +23,18 @@ L.C.raid = {
     colorHealth = true,
     colorThreat = true,
 
-    frequentUpdates = true,
-
     name = {
       enabled = true,
-      size = 11,
       points = {
         { "LEFT", 2, 0 },
         { "RIGHT", -2, 0 },
       },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
       align = "CENTER",
-      tag = "[name]",
       noshadow = true,
+      tag = "[name]",
     },
   },
 
@@ -52,9 +52,9 @@ L.C.raid = {
 
   setup = {
     template = nil,
-    visibility = "custom [group:raid] show; hide",
-    showPlayer = false,
-    showSolo = false,
+    -- visibility = "custom [group:raid] show; hide",
+    showPlayer = true,
+    showSolo = true,
     showParty = false,
     showRaid = true,
     point = "TOP",

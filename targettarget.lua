@@ -16,14 +16,16 @@ L.C.targettarget = {
 
     name = {
       enabled = true,
-      size = 12,
       points = {
         { "LEFT", 2, 0 },
         { "RIGHT", -2, 0 },
       },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
       align = "CENTER",
-      tag = "[name]",
       noshadow = true,
+      tag = "[name]",
     },
   },
 }

@@ -80,7 +80,7 @@ L.C.nameplate = {
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
-      tag = "[name]|r",
+      tag = "[oUF_RiphieConfig:name]",
     },
   },
 

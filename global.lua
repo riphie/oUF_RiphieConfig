@@ -17,7 +17,7 @@ L.C.backdrop = {
   insets = { left = 0, right = 0, top = 0, bottom = 0 },
 }
 
-L.C.font = LSM:Fetch("font", "Accidental Presidency")
+L.C.font = LSM:Fetch("font", "Expressway")
 
 L.C.textures = {
   statusbar = LSM:Fetch("statusbar", "SkullflowerGradient2"),

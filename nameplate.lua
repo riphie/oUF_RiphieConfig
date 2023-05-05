@@ -34,13 +34,14 @@ local NamePlateCustomUnits = {
 L.C.NamePlateCustomUnits = NamePlateCustomUnits
 
 local function FilterAuraBuffs(element, unit, data)
-  local nameplateShowSelf = data.nameplateShowSelf
-  local nameplateShowAll = data.nameplateShowAll
-  local isFromPlayerOrPlayerPet = data.isFromPlayerOrPlayerPet
+  -- local nameplateShowSelf = data.nameplateShowSelf
+  -- local nameplateShowAll = data.nameplateShowAll
+  -- local isFromPlayerOrPlayerPet = data.isFromPlayerOrPlayerPet
 
   -- TODO: add allow/denylist for buffs
 
-  return nameplateShowSelf or nameplateShowAll or isFromPlayerOrPlayerPet
+  -- return nameplateShowSelf or nameplateShowAll or isFromPlayerOrPlayerPet
+  return data.isStealable
 end
 
 local function FilterAuraDebuffs(element, unit, data)

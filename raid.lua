@@ -52,9 +52,9 @@ L.C.raid = {
 
   setup = {
     template = nil,
-    -- visibility = "custom [group:raid] show; hide",
-    showPlayer = true,
-    showSolo = true,
+    visibility = "custom [group:raid] show; hide",
+    showPlayer = false,
+    showSolo = false,
     showParty = false,
     showRaid = true,
     point = "TOP",

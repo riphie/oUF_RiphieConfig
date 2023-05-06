@@ -25,7 +25,7 @@ L.C.target = {
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
-      tag = "[oUF_RiphieConfig:name]",
+      tag = "[oUF_RiphieConfig:shortname]",
     },
 
     health = {

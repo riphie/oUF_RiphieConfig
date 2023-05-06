@@ -55,7 +55,7 @@ L.C.party = {
   -- TODO: castbar
 
   debuffs = {
-    enabled = true,
+    enabled = false,
 
     size = 26,
     point = { "LEFT", "RIGHT", 5, 0 },

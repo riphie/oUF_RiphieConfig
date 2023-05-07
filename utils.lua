@@ -2,7 +2,16 @@ local A, L = ...
 
 L.F = {}
 
-function ShortenString(str, numChars, dots)
+local function VirtualPixel(val)
+  local ppUiScale = 768 / GetScreenHeight()
+  local curUiScale = GetCVar("uiscale")
+  local vpixelSize = ppUiScale / curUiScale
+
+  return val * vpixelSize
+end
+L.F.VirtualPixel = VirtualPixel
+
+local function ShortenString(str, numChars, dots)
   local bytes = #str
   if bytes <= numChars then
     return str

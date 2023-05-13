@@ -7,6 +7,8 @@ L.C.focus = {
   point = { "RIGHT", "UIParent", "CENTER", -200, -300 },
   scale = 1 * L.C.globalscale,
 
+  range = { insideAlpha = 1, outsideAlpha = 0.6 },
+
   healthbar = {
     colorDisconnected = true,
     colorReaction = true,

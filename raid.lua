@@ -16,6 +16,8 @@ L.C.raid = {
   },
   scale = 1 * L.C.globalscale,
 
+  range = { insideAlpha = 1, outsideAlpha = 0.6 },
+
   healthbar = {
     colorDisconnected = true,
     colorReaction = true,

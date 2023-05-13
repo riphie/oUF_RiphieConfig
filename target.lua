@@ -14,6 +14,10 @@ L.C.target = {
     colorHealth = true,
     colorThreat = true,
 
+    absorb = {
+      enabled = true,
+    },
+
     name = {
       enabled = true,
       points = {
@@ -49,10 +53,6 @@ L.C.target = {
       noshadow = true,
       tag = "[perhp]%",
     },
-  },
-
-  absorbbar = {
-    enabled = true,
   },
 
   powerbar = {

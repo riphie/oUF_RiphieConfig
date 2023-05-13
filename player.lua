@@ -14,6 +14,10 @@ L.C.player = {
     colorHealth = false,
     colorThreat = false,
 
+    absorb = {
+      enabled = true,
+    },
+
     name = {
       enabled = true,
       point = { "CENTER", 0, 0 },
@@ -46,10 +50,6 @@ L.C.player = {
       noshadow = true,
       tag = "[perhp]%",
     },
-  },
-
-  absorbbar = {
-    enabled = true,
   },
 
   powerbar = {

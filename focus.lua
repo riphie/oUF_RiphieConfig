@@ -18,6 +18,10 @@ L.C.focus = {
 
     frequentUpdates = true,
 
+    absorb = {
+      enabled = true,
+    },
+
     name = {
       enabled = true,
       size = 12,
@@ -55,10 +59,6 @@ L.C.focus = {
       noshadow = true,
       tag = "[perhp]%",
     },
-  },
-
-  absorbbar = {
-    enabled = true,
   },
 
   powerbar = {

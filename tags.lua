@@ -32,7 +32,7 @@ L.C.tagMethods["oUF_RiphieConfig:shortname"] = function(unit, ...)
     name = L.C.NameAliases[name]
   end
 
-  name = L.F.ShortenString(name, 15, "...")
+  name = L.F.ShortenString(name, 14, "...")
 
   if class == "elite" then
     return name .. " ++"

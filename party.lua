@@ -1,5 +1,9 @@
 local A, L = ...
 
+local function FilterAuraDebuffs(element, unit, data)
+  return L.C.BossDebuffAllowList[data.spellId]
+end
+
 L.C.party = {
   enabled = true,
 
@@ -109,6 +113,8 @@ L.C.party = {
     growthX = "RIGHT",
     growthY = "DOWN",
     disableCooldown = true,
+
+    FilterAuras = FilterAuraDebuffs,
 
     duration = {
       point = { "TOP", 0, 4 },

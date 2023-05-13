@@ -33,46 +33,17 @@ local NamePlateBuffAllowList = {}
 
 local function FilterAuraBuffs(element, unit, data)
   -- Only show buffs that are purgable/stealable or in the allow list
-  return data.isStealable or NamePlateBuffAllowList[data.spellId]
+  return data.isStealable or L.C.NamePlateBuffAllowList[data.spellId]
 end
 
-local NamePlateDebuffAllowList = {
-  -- ["DEATH_KNIGHT"] = {},
-  ["DEMONHUNTER"] = {
-    [179057] = true, -- Chaos Nova
-    [204490] = true, -- Sigil of Silence
-    [204598] = true, -- Sigil of Flame
-    [207771] = true, -- Fiery BRand
-    [247456] = true, -- Frailty
-  },
-  -- ["DRUID"] = {},
-  -- ["EVOKER"] = {},
-  -- ["HUNTER"] = {},
-  -- ["MAGE"] = {},
-  -- ["MONK"] = {},
-  -- ["PALADIN"] = {},
-  -- ["PRIEST"] = {},
-  -- ["SHAMAN"] = {},
-  ["ROGUE"] = {
-    [1943] = true, -- Rupture
-    [316220] = true, -- Find Weakness
-  },
-  -- ["WARLOCK"] = {},
-  ["WARRIOR"] = {
-    [355] = true, -- Taunt
-    [1160] = true, -- Demoralizing Shout
-    [132168] = true, -- Shockwave
-    [132169] = true, -- Storm Bolt
-    [397364] = true, -- Thunderous Roar
-  },
-}
-
 local function FilterAuraDebuffs(element, unit, data)
-  if NamePlateDebuffAllowList[class] then
-    return data.isFromPlayerOrPlayerPet and NamePlateDebuffAllowList[class][data.spellId]
+  local isPlayer = UnitIsPlayer(data.sourceUnit)
+
+  if L.C.NamePlateDebuffAllowList[class] then
+    return isPlayer and L.C.NamePlateDebuffAllowList[class][data.spellId]
   end
 
-  return data.isFromPlayerOrPlayerPet
+  return isPlayer
 end
 
 local NamePlateCustomUnits = {
@@ -183,7 +154,6 @@ L.C.nameplate = {
     growthX = "RIGHT",
     growthY = "UP",
     disableCooldown = true,
-    filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
 
     FilterAura = FilterAuraDebuffs,
 

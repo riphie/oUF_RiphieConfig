@@ -1,5 +1,17 @@
 local A, L = ...
 
+local _, class = UnitClass("player")
+
+local function FilterAuraDebuffs(element, unit, data)
+  local isPlayer = UnitIsPlayer(data.sourceUnit)
+
+  if L.C.BossDebuffAllowList[class] then
+    return isPlayer and L.C.BossDebuffAllowList[class][data.spellId]
+  end
+
+  return isPlayer
+end
+
 L.C.boss = {
   enabled = true,
 
@@ -100,7 +112,8 @@ L.C.boss = {
     growthX = "LEFT",
     growthY = "DOWN",
     disableCooldown = true,
-    onlyShowPlayer = true,
+
+    FilterAura = FilterAuraDebuffs,
 
     duration = {
       point = { "TOP", 0, 4 },

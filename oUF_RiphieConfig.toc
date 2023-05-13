@@ -8,6 +8,7 @@ init.lua
 global.lua
 utils.lua
 tags.lua
+filters.lua
 player.lua
 target.lua
 targettarget.lua

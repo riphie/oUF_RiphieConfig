@@ -32,7 +32,7 @@ L.C.raid = {
         { "RIGHT", -2, 0 },
       },
       font = L.C.font,
-      size = 12,
+      size = 11,
       outline = "OUTLINE",
       align = "CENTER",
       noshadow = true,

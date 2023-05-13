@@ -3,9 +3,8 @@ local A, L = ...
 L.C.focus = {
   enabled = true,
 
-  -- TODO: consider resize/reposition
   size = { 150, 20 },
-  point = { "RIGHT", UIParent, "CENTER", -210, -308 },
+  point = { "RIGHT", "UIParent", "CENTER", -200, -300 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -21,8 +20,8 @@ L.C.focus = {
       enabled = true,
       size = 12,
       points = {
-        { "TOPLEFT", 0, 18 },
-        { "TOPRIGHT", 0, 18 },
+        { "TOPLEFT", 0, 10 },
+        { "TOPRIGHT", 0, 10 },
       },
       font = L.C.font,
       size = 12,
@@ -82,8 +81,7 @@ L.C.focus = {
   castbar = {
     enabled = true,
     size = { 150, 20 },
-    -- TODO: update Y position due to powerbar enabled
-    point = { "TOP", "BOTTOM", 0, -6 },
+    point = { "TOP", "BOTTOM", 0, -8 },
 
     name = {
       enabled = true,

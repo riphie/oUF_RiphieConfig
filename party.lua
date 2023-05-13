@@ -4,7 +4,7 @@ L.C.party = {
   enabled = true,
 
   size = { 150, 25 },
-  point = { "CENTER", "UIParent", "CENTER", -450, -9 },
+  point = { "CENTER", "UIParent", "CENTER", -450, 0 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -57,7 +57,7 @@ L.C.party = {
   debuffs = {
     enabled = false,
 
-    size = 26,
+    size = 25,
     point = { "LEFT", "RIGHT", 5, 0 },
     num = 5,
     cols = 5,
@@ -107,6 +107,6 @@ L.C.party = {
     showRaid = false,
     point = "TOP",
     xOffset = 0,
-    yOffset = -4,
+    yOffset = -5,
   },
 }

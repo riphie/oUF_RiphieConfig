@@ -59,6 +59,6 @@ L.C.raid = {
     showRaid = true,
     point = "TOP",
     xOffset = 0,
-    yOffset = -5,
+    yOffset = -6,
   },
 }

@@ -4,7 +4,7 @@ L.C.target = {
   enabled = true,
 
   size = { 180, 30 },
-  point = { "LEFT", UIParent, "CENTER", 200, -172 },
+  point = { "LEFT", "UIParent", "CENTER", 200, -177 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -17,8 +17,8 @@ L.C.target = {
     name = {
       enabled = true,
       points = {
-        { "TOPLEFT", 0, 18 },
-        { "TOPRIGHT", 0, 18 },
+        { "TOPLEFT", 0, 10 },
+        { "TOPRIGHT", 0, 10 },
       },
       font = L.C.font,
       size = 12,
@@ -60,7 +60,7 @@ L.C.target = {
 
     enabled = true,
     size = { 180, 3 },
-    point = { "TOP", "BOTTOM", 0, -0.5 },
+    point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {
       enabled = false,
@@ -77,7 +77,7 @@ L.C.target = {
   castbar = {
     enabled = true,
     size = { 180, 20 },
-    point = { "TOP", "BOTTOM", 0, -9 },
+    point = { "TOP", "BOTTOM", 0, -8 },
 
     name = {
       enabled = true,
@@ -115,8 +115,8 @@ L.C.target = {
   buffs = {
     enabled = true,
 
-    size = 20.5,
-    point = { "BOTTOMLEFT", "RIGHT", 4, 4 },
+    size = 20,
+    point = { "BOTTOMLEFT", "RIGHT", 5, 5 },
     num = 40,
     cols = 8,
     spacing = 5,
@@ -126,7 +126,7 @@ L.C.target = {
     disableCooldown = true,
 
     duration = {
-      point = { "TOP", 0, 4 },
+      point = { "TOP", 0, 0 },
       font = L.C.font,
       size = 10,
       outline = "OUTLINE",
@@ -147,8 +147,8 @@ L.C.target = {
   debuffs = {
     enabled = true,
 
-    size = 20.5,
-    point = { "TOPLEFT", "RIGHT", 4, -4.5 },
+    size = 20,
+    point = { "TOPLEFT", "RIGHT", 5, -5 },
     num = 40,
     cols = 8,
     spacing = 5,
@@ -159,7 +159,7 @@ L.C.target = {
     onlyShowPlayer = true,
 
     duration = {
-      point = { "TOP", 0, 4 },
+      point = { "TOP", 0, 0 },
       font = L.C.font,
       size = 10,
       outline = "OUTLINE",

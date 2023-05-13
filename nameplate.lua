@@ -153,7 +153,7 @@ L.C.nameplate = {
     FilterAura = FilterAuraBuffs,
 
     duration = {
-      point = { "TOP", 0, 4 },
+      point = { "TOP", 0, 0 },
       font = L.C.font,
       size = 10,
       outline = "OUTLINE",
@@ -162,7 +162,7 @@ L.C.nameplate = {
     },
 
     count = {
-      point = { "BOTTOMRIGHT", 2, -2 },
+      point = { "BOTTOMRIGHT", 1, -1 },
       font = L.C.font,
       size = 12,
       outline = "OUTLINE",
@@ -188,7 +188,7 @@ L.C.nameplate = {
     FilterAura = FilterAuraDebuffs,
 
     duration = {
-      point = { "TOP", 0, 4 },
+      point = { "TOP", 0, 0 },
       font = L.C.font,
       size = 10,
       outline = "OUTLINE",
@@ -197,7 +197,7 @@ L.C.nameplate = {
     },
 
     count = {
-      point = { "BOTTOMRIGHT", 2, -2 },
+      point = { "BOTTOMRIGHT", 1, -1 },
       font = L.C.font,
       size = 12,
       outline = "OUTLINE",

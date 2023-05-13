@@ -4,7 +4,7 @@ L.C.player = {
   enabled = true,
 
   size = { 180, 30 },
-  point = { "RIGHT", UIParent, "CENTER", -200, -172 },
+  point = { "RIGHT", "UIParent", "CENTER", -200, -177 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -57,7 +57,7 @@ L.C.player = {
 
     enabled = false,
     size = { 180, 3 },
-    point = { "TOP", "BOTTOM", 0, -0.5 },
+    point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {
       enabled = false,
@@ -74,7 +74,7 @@ L.C.player = {
   castbar = {
     enabled = true,
     size = { 220, 20 },
-    point = { "CENTER", UIParent, "CENTER", 0, -300 },
+    point = { "CENTER", "UIParent", "CENTER", 0, -300 },
 
     name = {
       enabled = true,
@@ -103,9 +103,9 @@ L.C.player = {
     },
 
     icon = {
-      enabled = false,
+      enabled = true,
       size = { 20, 20 },
-      point = { "RIGHT", "LEFT", -6, 0 },
+      point = { "RIGHT", "LEFT", -5, 0 },
     },
 
     safezone = {

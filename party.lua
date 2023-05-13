@@ -41,7 +41,16 @@ L.C.party = {
       tag = "[oUF_Riphie:health]",
     },
 
-    -- TODO: add healthperc
+    healthperc = {
+      enabled = false,
+      point = { "LEFT", 5, 0 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+      tag = "[perhp]%",
+    },
   },
 
   powerbar = {
@@ -51,10 +60,42 @@ L.C.party = {
     size = { 180, 5 },
     point = { "TOP", "BOTTOM", 0, -1 },
 
-    -- TODO: add power
+    power = {
+      enabled = false,
+      point = { "LEFT", -2, 0 },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+      tag = "[perpp]",
+    },
   },
 
-  -- TODO: castbar
+  castbar = {
+    enabled = false,
+    size = { 150, 20 },
+    point = { "LEFT", "RIGHT", 6, 0 },
+
+    name = {
+      enabled = true,
+      points = {
+        { "LEFT", 2, 0 },
+        { "RIGHT", -2, 0 },
+      },
+      font = L.C.font,
+      size = 12,
+      outline = "OUTLINE",
+      align = "LEFT",
+      noshadow = true,
+    },
+
+    icon = {
+      enabled = false,
+      size = { 26, 26 },
+      point = { "LEFT", "RIGHT", 5, 0 },
+    },
+  },
 
   debuffs = {
     enabled = false,

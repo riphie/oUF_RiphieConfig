@@ -50,8 +50,8 @@ L.C.colors.castbar = {
   default = { 1, 0.7, 0 },
   defaultBG = { 1 * L.C.colors.bgMultiplier, 0.7 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
 
-  shielded = { 0.7, 0.7, 0.7 },
-  shieldedBG = { 0.7 * L.C.colors.bgMultiplier, 0.7 * L.C.colors.bgMultiplier, 0.7 * L.C.colors.bgMultiplier },
+  shielded = { 0.9, 0.1, 0.4 },
+  shieldedBG = { 0.9 * L.C.colors.bgMultiplier, 0.1 * L.C.colors.bgMultiplier, 0.4 * L.C.colors.bgMultiplier },
 }
 
 -- override oUF threat colouring

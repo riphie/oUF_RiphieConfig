@@ -29,8 +29,6 @@ local NamePlateCVars = {
 }
 L.C.NamePlateCVars = NamePlateCVars
 
-local NamePlateBuffAllowList = {}
-
 local function FilterAuraBuffs(element, unit, data)
   -- Only show buffs that are purgable/stealable or in the allow list
   return data.isStealable or L.C.NamePlateBuffAllowList[data.spellId]

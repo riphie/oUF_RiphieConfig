@@ -69,7 +69,7 @@ L.C.nameplate = {
     name = {
       enabled = true,
       points = {
-        { "CENTER", 0, 8 },
+        { "TOP", 0, 13 },
       },
       font = L.C.font,
       size = 14,
@@ -109,7 +109,7 @@ L.C.nameplate = {
     enabled = true,
 
     size = 25,
-    point = { "BOTTOMRIGHT", "TOPRIGHT", 0, 8 },
+    point = { "BOTTOMRIGHT", "TOPRIGHT", 0, 20 },
     num = 5,
     cols = 5,
     spacing = 5,
@@ -144,7 +144,7 @@ L.C.nameplate = {
     enabled = true,
 
     size = 25,
-    point = { "BOTTOMLEFT", "TOPLEFT", 0, 8 },
+    point = { "BOTTOMLEFT", "TOPLEFT", 0, 20 },
     num = 5,
     cols = 5,
     spacing = 5,

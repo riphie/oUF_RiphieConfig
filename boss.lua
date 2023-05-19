@@ -112,6 +112,7 @@ L.C.boss = {
     growthX = "LEFT",
     growthY = "DOWN",
     disableCooldown = true,
+    filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
 
     FilterAura = FilterAuraDebuffs,
 

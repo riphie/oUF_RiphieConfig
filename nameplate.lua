@@ -298,6 +298,7 @@ L.C.nameplate = {
     growthX = "RIGHT",
     growthY = "UP",
     disableCooldown = true,
+    filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
 
     FilterAura = FilterAuraDebuffs,
 

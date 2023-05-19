@@ -56,7 +56,7 @@ local BossDebuffAllowList = {
     [1943] = true, -- Rupture
   },
   ["WARLOCK"] = false,
-  ["WARRIOR"] = false,
+  ["WARRIOR"] = {},
 }
 L.C.BossDebuffAllowList = BossDebuffAllowList
 

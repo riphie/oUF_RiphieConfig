@@ -196,6 +196,33 @@ local NamePlateCustomUnits = {
 }
 L.C.NamePlateCustomUnits = NamePlateCustomUnits
 
+local function NamePlateCallback(self, event, unit)
+  if event == "NAME_PLATE_UNIT_ADDED" then
+    self.blizzPlate = self:GetParent().UnitFrame
+    self.widgetsOnly = UnitNameplateShowsWidgetsOnly(unit)
+    self.widgetSet = UnitWidgetSet(unit)
+
+    if self.widgetsOnly then
+      self.Health:SetAlpha(0)
+      self.widgetContainer = self.blizzPlate.WidgetContainer
+
+      if self.widgetContainer then
+        self.widgetContainer:SetParent(self)
+        self.widgetContainer:ClearAllPoints()
+        self.widgetContainer:SetPoint("BOTTOM", self, "BOTTOM")
+      end
+    end
+  elseif event == "NAME_PLATE_UNIT_REMOVED" then
+    if self.widgetsOnly and self.widgetContainer then
+      self.Health:SetAlpha(1)
+      self.widgetContainer:SetParent(self.blizzPlate)
+      self.widgetContainer:ClearAllPoints()
+      self.widgetContainer:SetPoint("TOP", self.blizzPlate.castBar, "BOTTOM")
+    end
+  end
+end
+L.C.NamePlateCallback = NamePlateCallback
+
 L.C.nameplate = {
   enabled = true,
 

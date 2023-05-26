@@ -90,7 +90,7 @@ L.C.player = {
     },
 
     time = {
-      enabled = true,
+      enabled = false,
       points = {
         { "LEFT", 2, 0 },
         { "RIGHT", -2, 0 },

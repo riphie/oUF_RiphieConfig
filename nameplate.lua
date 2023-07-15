@@ -47,12 +47,16 @@ end
 local frontal = { 20 / 255, 140 / 255, 255 / 225 } -- Blue
 local interruptable = { 100 / 255, 240 / 255, 235 / 255 } -- Aqua
 local stunnable = { 255 / 255, 0 / 255, 255 / 255 } -- Magenta
+local important = { 250 / 255, 128 / 255, 114 / 255 } -- Peach
 
 local NamePlateCustomUnits = {
   -- Training dummy testing
-  [189617] = frontal, -- Boulderfist (Valdrakken)
+  [189617] = important, -- Boulderfist (Valdrakken)
   [194644] = stunnable, -- Dungeoneer's Training Dummy (Valdrakken)
   [194649] = interruptable, -- Normal Raid Dummy (Valdrakken)
+
+  -- Mythic+ Affixes
+  [174773] = important, -- Spiteful Shade
 
   -- Brackenhide Hollow
   [185508] = stunnable, -- Claw Fighter

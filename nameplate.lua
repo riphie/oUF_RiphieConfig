@@ -1,6 +1,6 @@
 local A, L = ...
 
-local _, class = UnitClass("player")
+local _, class = UnitClass "player"
 
 local NamePlateCVars = {
   nameplateMinScale = 1,

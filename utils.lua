@@ -4,7 +4,7 @@ L.F = {}
 
 local function VirtualPixel(val)
   local ppUiScale = 768 / GetScreenHeight()
-  local curUiScale = GetCVar("uiscale")
+  local curUiScale = GetCVar "uiscale"
   local vpixelSize = ppUiScale / curUiScale
 
   return val * vpixelSize

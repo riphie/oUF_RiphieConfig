@@ -1,6 +1,6 @@
 local A, L = ...
 
-local _, class = UnitClass("player")
+local _, class = UnitClass "player"
 
 local function FilterAuraDebuffs(element, unit, data)
   local isPlayer = UnitIsPlayer(data.sourceUnit)

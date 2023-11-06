@@ -44,159 +44,101 @@ local function FilterAuraDebuffs(element, unit, data)
   return isPlayer
 end
 
-local frontal = { 20 / 255, 140 / 255, 255 / 225 } -- Blue
-local interruptable = { 100 / 255, 240 / 255, 235 / 255 } -- Aqua
-local stunnable = { 255 / 255, 0 / 255, 255 / 255 } -- Magenta
-local important = { 250 / 255, 128 / 255, 114 / 255 } -- Peach
+local important = { 0.98, 0.50, 0.45 } -- Peach
+
+local interruptable = { 1, 0, 1, 1 }
+local secondaryInterruptable = { 0.96, 0.55, 0.73 }
+local stunnable = { 0, 1, 0, 1 }
+local secondaryStunnable = { 0, 0, 1, 1 }
+local highPriority = { 0, 1, 1, 1 }
+local frontal = { 0.78, 0.61, 0.43 }
 
 local NamePlateCustomUnits = {
-  -- Training dummy testing
-  [189617] = important, -- Boulderfist (Valdrakken)
-  [194644] = stunnable, -- Dungeoneer's Training Dummy (Valdrakken)
-  [194649] = interruptable, -- Normal Raid Dummy (Valdrakken)
+  -- Debugging
+  [189617] = secondaryStunnable, -- Boulderfist
 
   -- Mythic+ Affixes
   [174773] = important, -- Spiteful Shade
 
-  -- Brackenhide Hollow
-  [185508] = stunnable, -- Claw Fighter
-  [185528] = interruptable, -- Trickclaw Mystic
-  [185529] = interruptable, -- Brackenhide Warscourge
-  [185534] = stunnable, -- Bonebolt Hunter
-  [185656] = interruptable, -- Filth Caller
-  [186120] = frontal, -- Treemouth
-  [186122] = frontal, -- Rira Hackclaw
-  [186125] = interruptable, -- Tricktotem
-  [186191] = interruptable, -- Decay Speaker
-  [186206] = stunnable, -- Cruel Bonecrusher
-  [186208] = frontal, -- Rotbow Stalker
-  [186220] = interruptable, -- Brackenhide Shaper
-  [186229] = frontal, -- Wilted Oak
-  [186245] = interruptable, -- Fleshripper Vulture
-  [187033] = frontal, -- Stinkbreath
-  [187231] = stunnable, -- Wither Biter
-  [187315] = stunnable, -- Bisease Slasher
-  [189299] = interruptable, -- Decaying Slime
-  [192481] = interruptable, -- Decaying Slime
-  [194330] = interruptable, -- Decaying Slime
-  [195135] = interruptable, -- Bracken Warscourge
-  [196226] = interruptable, -- Fetid Rotsinger
-  [199916] = interruptable, -- Decaying Slime
+  -- Atal'Dazar
+  [122969] = secondaryInterruptable, -- Zanchuli Witch-Doctor
+  [122970] = stunnable, -- Shadowblade Stalker
+  [122972] = interruptable, -- Dazar'ai Augur
+  [127757] = highPriority, -- Reanimated Honor Guard
+  [127799] = frontal, -- Dazar'ai Honor Guard
+  [127879] = frontal, -- Shieldbearer of Zul
+  [128434] = secondaryInterruptable, -- Feasting Skyscreamer
+  [129552] = frontal, -- Monzumi
+  [129553] = interruptable, -- Dinomancer Kish'o
+  [135989] = frontal, -- Shieldbearer of Zul
 
-  -- Halls of Infusion
-  [189727] = frontal, -- Khajin the Unyielding
-  [190340] = frontal, -- Refti Defender
-  [190342] = interruptable, -- Containment Apparatus
-  [190345] = interruptable, -- Primalist Geomancer
-  [190348] = interruptable, -- Primalist Ravager
-  [190362] = frontal, -- Dazzling Dragonfly
-  [190371] = frontal, -- Primalist Earthshaker
-  [190373] = interruptable, -- Primalist Galesinger
-  [190377] = interruptable, -- Primalist Icecaller
-  [190386] = interruptable, -- Flamecaller Aymi
-  [190401] = frontal, -- Gusting Proto-Dragon
-  [190403] = frontal, -- Glacial Proto-Dragon
-  [190404] = frontal, -- Subterranean Proto-Dragon
-  [190405] = interruptable, -- Infuser Sariya
-  [190407] = interruptable, -- Aqua Rager
-  [196043] = interruptable, -- Primalist Infuser
-  [196712] = stunnable, -- Nullification Device
-  [199037] = interruptable, -- Primalist Shocktrooper
+  -- Black Rook Hold
+  [98243] = frontal, -- Soul-Torn Champion
+  [98366] = stunnable, -- Ghostly Retainer
+  [98368] = frontal, -- Ghostly Protector
+  [98538] = highPriority, -- Lady Velandras Ravencrest
+  [98691] = stunnable, -- Risen Scout
+  [98706] = frontal, -- Commander Shemdah'sohn
+  [98792] = stunnable, -- Wyrmtongue Scavenger
+  [98810] = frontal, -- Wrathguard Bladelord
+  [102094] = frontal, -- Risen Swordsman
+  [102095] = stunnable, -- Risen Lancer
+  [102788] = secondaryInterruptable, -- Felspite Dominator
 
-  -- Uldaman, Legacy of Tyr
-  [184022] = interruptable, -- Stonevault Geomancer
-  [184023] = interruptable, -- Vicious Basilisk
-  [184125] = frontal, -- Chrono-Lord Deios
-  [184130] = frontal, -- Earthen Custodian
-  [184132] = interruptable, -- Earthen Warder
-  [184301] = interruptable, -- Cavern Seeker
-  [184319] = stunnable, -- Refti Custodian
-  [184331] = stunnable, -- Infinite Timereaver
-  [184335] = stunnable, -- Infinite Agent
-  [184422] = frontal, -- Emberon
-  [184580] = interruptable, -- Olaf
-  [184581] = frontal, -- Baelog
-  [186420] = stunnable, -- Earthen Weaver
-  [186658] = interruptable, -- Stonevault Geomancer
+  -- Darkheart Thicket
+  [95766] = frontal, -- Crazed Razorbeak
+  [95769] = interruptable, -- Mindshattered Screecher
+  [95771] = secondaryInterruptable, -- Dreadsoul Ruiner
+  [99359] = highPriority, -- Rotheart Keeper
+  [99366] = interruptable, -- Taintheart Summoner
+  [100526] = frontal, -- Tormented Bloodseeker
+  [100527] = secondaryInterruptable, -- Dreadfire Imp
+  [100531] = frontal, -- Bloodtainted Fury
+  [101991] = secondaryInterruptable, -- Nightmare Dweller
 
-  -- Neltharus
-  [181861] = frontal, -- Magmatusk
-  [189227] = stunnable, -- Qalashi Hunter
-  [189235] = interruptable, -- Overseer Lahar
-  [189247] = interruptable, -- Tamed Phoenix
-  [189265] = interruptable, -- Qalashi Bonetender
-  [189266] = frontal, -- Qalashi Trainee
-  [189340] = frontal, -- Chargath, Bane of Scales
-  [189464] = frontal, -- Qalashi Irontorch
-  [189467] = stunnable, -- Qalashi Bonesplitter
-  [189470] = interruptable, -- Lava Flare
-  [192464] = stunnable, -- Raging Ember
-  [192786] = stunnable, -- Qalashi Plunderer
-  [192788] = interruptable, -- Qalashi Thaumaturge
-  [193293] = frontal, -- Qalashi Warden
-  [193944] = interruptable, -- Qalashi Lavamancer
+  -- Dawn of the Infinites
+  [199748] = interruptable, -- Timeline Marauder
+  [199749] = frontal, -- Timestream Anomaly
+  [201222] = highPriority, -- Valow, Timesworn Keeper
+  [201223] = secondaryInterruptable, -- Infinite Twilight Magus
+  [204918] = interruptable, -- Iridikron's Creation
+  [205151] = frontal, -- Tyr's Vanguard
+  [205152] = highPriority, -- Lerai, Timesworn Maiden
+  [205158] = highPriority, -- Spurlok, Timesworn Sentinel
+  [205363] = secondaryInterruptable, -- Time-Lost Waveshaper
+  [205384] = secondaryInterruptable, -- Infinite Chronoweaver
+  [205408] = frontal, -- Infinite Timeslicer
+  [205691] = interruptable, -- Iridikron's Creation
+  [205727] = interruptable, -- Time-Lost Rocketeer
+  [205804] = frontal, -- Risen Dragon
+  [206066] = secondaryInterruptable, -- Timestream Leech
+  [206140] = interruptable, -- Coalesced Time
+  [208698] = interruptable, -- Infinite Riftmage
 
-  -- Freehold
-  [126832] = frontal, -- Skycap'n Kragg
-  [126848] = frontal, -- Captain Eudora
-  [126918] = stunnable, -- Irontide Crackshot
-  [126919] = interruptable, -- Irontide Stormcaller
-  [126969] = frontal, -- Trothak
-  [127106] = stunnable, -- Irontide Officer
-  [127111] = interruptable, -- Irontide Oarsman
-  [129547] = interruptable, -- Blacktooth Knuckleduster
-  [129548] = stunnable, -- Blacktooth Brute
-  [129559] = stunnable, -- Cutwater Duelist
-  [129600] = interruptable, -- Bilge Rat Brinescale
-  [129602] = frontal, -- Irontide Enforcer
-  [129758] = stunnable, -- Irontide Grenadier
-  [129788] = interruptable, -- Irontide Bonesaw
-  [130011] = stunnable, -- Irontide Buccaneer
+  -- Everbloom
+  [81820] = secondaryInterruptable, -- Everbloom Mender
+  [84957] = secondaryInterruptable, -- Putrid Pyromancer
+  [84989] = interruptable, -- Infested Icecaller
+  [86372] = highPriority, -- Melded Berserker
+  [212981] = frontal, -- Hapless Assistant
 
-  -- The Underrot
-  [130909] = frontal, -- Fetid Maggot
-  [131318] = interruptable, -- Elder Leaxa
-  [131383] = frontal, -- Sporecaller Zancha
-  [131436] = frontal, -- Chosen Blood Matron
-  [131492] = interruptable, -- Devout Blood Priest
-  [131817] = frontal, -- Cragmaw the Infested
-  [133007] = frontal, -- Unbound Abomination
-  [133663] = stunnable, -- Fanatical Headhunter
-  [133835] = interruptable, -- Feral Bloodswarmer
-  [133870] = interruptable, -- Diseased Lasher
-  [133912] = interruptable, -- Bloodsworm Defiler
-  [134284] = interruptable, -- Fallen Deathspeaker
-  [134701] = interruptable, -- Blood Effigy
-  [138187] = interruptable, -- Grotesque Horror
-  [138281] = frontal, -- Faceless Corruptor
+  -- Throne of the Tides
+  [40925] = highPriority, -- Tainted Sentry
+  [40935] = stunnable, -- Gilgoblin Hunter
+  [40936] = frontal, -- Faceless Watcher
+  [40943] = secondaryInterruptable, -- Gilgoblin Aquamage
+  [41096] = interruptable, -- Naz'jar Oracle
+  [212673] = frontal, -- Naz'jar Ravager
+  [212775] = interruptable, -- Faceless Seer
 
-  -- Neltharion's Lair
-  [90997] = frontal, -- Mightstone Breaker
-  [90998] = interruptable, -- Blightshard Shaper
-  [91000] = frontal, -- Vileshard Hulk
-  [91001] = interruptable, -- Tarsppitter Lurker
-  [91003] = frontal, -- Rokmora
-  [91007] = frontal, -- Dargrul
-  [91008] = stunnable, -- Rockbound Pelter
-  [92538] = stunnable, -- Tarspitter Grub
-  [98406] = stunnable, -- Embershard Scorpion
-  [102232] = interruptable, -- Rockbound Trapper
-  [102287] = frontal, -- Emberhusk Dominator
-  [102295] = frontal, -- Emberhusk Dominator
-  [113536] = frontal, -- Emberhusk Dominator
-  [113537] = frontal, -- Emberhusk Dominator
-  [113998] = frontal, -- Mightstone Breaker
-
-  -- The Vortex Pinnacle
-  [43873] = frontal, -- Altairus
-  [43878] = interruptable, -- Grand Vizier Ertan
-  [45477] = frontal, -- Gust Soldier
-  [45912] = interruptable, -- Wild Vortex
-  [45919] = frontal, -- Young Storm Dragon
-  [45922] = interruptable, -- Empyrean Assassin
-  [45924] = interruptable, -- Turbulent Squall
-  [45930] = interruptable, -- Minister of Air
-  [45935] = interruptable, -- Temple Adept
+  -- Waycrest Manor
+  [131586] = highPriority, -- Banquet Steward
+  [131587] = frontal, -- Bewitched Captain
+  [131666] = interruptable, -- Coven Thornshaper
+  [131812] = interruptable, -- Heartsbane Soulcharmer
+  [131821] = interruptable, -- Faceless Maiden
+  [135240] = secondaryInterruptable, -- Soul Essence
+  [137830] = stunnable, -- Pallid Gorger
 }
 L.C.NamePlateCustomUnits = NamePlateCustomUnits
 

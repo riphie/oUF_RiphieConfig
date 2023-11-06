@@ -24,7 +24,9 @@ local NamePlateDebuffAllowList = {
     [188389] = true, -- Flame Shock
   },
   ["ROGUE"] = {
+    [408] = true, -- Kidney Shot
     [1943] = true, -- Rupture
+    [2094] = true, -- Blind
     [316220] = true, -- Find Weakness
   },
   ["WARLOCK"] = false,

@@ -25,6 +25,7 @@ local NamePlateDebuffAllowList = {
   },
   ["ROGUE"] = {
     [408] = true, -- Kidney Shot
+    [703] = true, -- Garrote
     [1943] = true, -- Rupture
     [2094] = true, -- Blind
     [316220] = true, -- Find Weakness

@@ -46,12 +46,12 @@ end
 
 local important = { 0.98, 0.50, 0.45 } -- Peach
 
-local interruptable = { 1, 0, 1, 1 }
-local secondaryInterruptable = { 0.96, 0.55, 0.73 }
-local stunnable = { 0, 1, 0, 1 }
-local secondaryStunnable = { 0, 0, 1, 1 }
-local highPriority = { 0, 1, 1, 1 }
-local frontal = { 0.78, 0.61, 0.43 }
+local interruptable = { 1, 0, 1, 1 } -- Magenta
+local secondaryInterruptable = { 0.96, 0.55, 0.73 } -- Pink
+local stunnable = { 0, 1, 0, 1 } -- Lime
+local secondaryStunnable = { 0, 0, 1, 1 } -- Blue
+local highPriority = { 0, 1, 1, 1 } -- Cyan
+local frontal = { 0.78, 0.61, 0.43 } -- Brown
 
 local NamePlateCustomUnits = {
   -- Debugging

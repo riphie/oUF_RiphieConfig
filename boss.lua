@@ -41,7 +41,7 @@ L.C.boss = {
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
-      tag = "[name]",
+      tag = "[oUF_RiphieConfig:shortname]",
     },
 
     healthperc = {

@@ -1,7 +1,7 @@
 local A, L = ...
 
 local function FilterAuraDebuffs(element, unit, data)
-  return L.C.BossDebuffAllowList[data.spellId]
+  return L.C.PartyDebuffAllowList[data.spellId]
 end
 
 L.C.party = {

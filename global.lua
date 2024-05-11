@@ -20,8 +20,8 @@ L.C.backdrop = {
 L.C.font = LSM:Fetch("font", "Expressway")
 
 L.C.textures = {
-  statusbar = LSM:Fetch("statusbar", "SkullflowerGradient"),
-  statusbarBG = LSM:Fetch("statusbar", "SkullflowerGradient"),
+  statusbar = LSM:Fetch("statusbar", "SkullflowerNeon"),
+  statusbarBG = LSM:Fetch("statusbar", "SkullflowerNeon"),
 
   absorb = LSM:Fetch("statusbar", "RiphieAbsorb"),
 }

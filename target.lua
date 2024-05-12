@@ -3,7 +3,7 @@ local A, L = ...
 L.C.target = {
   enabled = true,
 
-  size = { 180, 30 },
+  size = { 180, 25 },
   point = { "LEFT", "UIParent", "CENTER", 200, -177 },
   scale = 1 * L.C.globalscale,
 
@@ -36,7 +36,7 @@ L.C.target = {
       enabled = true,
       point = { "RIGHT", -5, 0 },
       font = L.C.font,
-      size = 12,
+      size = 15,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
@@ -47,7 +47,7 @@ L.C.target = {
       enabled = true,
       point = { "LEFT", 5, 0 },
       font = L.C.font,
-      size = 12,
+      size = 15,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,

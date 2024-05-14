@@ -1,10 +1,10 @@
-local A, L = ...
+local _, L = ...
 
 L.C.target = {
   enabled = true,
 
   size = { 180, 25 },
-  point = { "LEFT", "UIParent", "CENTER", 200, -177 },
+  point = { "LEFT", "UIParent", "CENTER", 200, -174 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {

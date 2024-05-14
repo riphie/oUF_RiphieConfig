@@ -22,6 +22,7 @@ local NamePlateDebuffAllowList = {
   ["PRIEST"] = false,
   ["SHAMAN"] = {
     [188389] = true, -- Flame Shock
+    [334168] = true, -- Lashing Flames
   },
   ["ROGUE"] = {
     [408] = true, -- Kidney Shot

@@ -3,7 +3,7 @@ local _, L = ...
 L.C.player = {
   enabled = true,
 
-  size = { 180, 25 },
+  size = { 180, 26 },
   point = { "RIGHT", "UIParent", "CENTER", -200, -174 },
   scale = 1 * L.C.globalscale,
 

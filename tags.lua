@@ -1,9 +1,9 @@
-local A, L = ...
+local _, L = ...
 
 local NameAliases = {}
 L.C.NameAliases = NameAliases
 
-L.C.tagMethods["oUF_RiphieConfig:status"] = function(unit, ...)
+L.C.tagMethods["oUF_RiphieConfig:status"] = function(unit)
   if UnitAffectingCombat(unit) then
     return "|TInterface\\CharacterFrame\\UI-StateIcon:20:20:0:0:64:64:33:64:0:31|t"
   elseif unit == "player" and IsResting() then
@@ -12,7 +12,7 @@ L.C.tagMethods["oUF_RiphieConfig:status"] = function(unit, ...)
 end
 L.C.tagEvents["oUF_RiphieConfig:status"] = "PLAYER_REGEN_DISABLED PLAYER_REGEN_ENABLED PLAYER_UPDATE_RESTING"
 
-L.C.tagMethods["oUF_RiphieConfig:name"] = function(unit, ...)
+L.C.tagMethods["oUF_RiphieConfig:name"] = function(unit)
   local name = UnitName(unit)
   local class = UnitClassification(unit)
 
@@ -24,7 +24,7 @@ L.C.tagMethods["oUF_RiphieConfig:name"] = function(unit, ...)
 end
 L.C.tagEvents["oUF_RiphieConfig:name"] = "UNIT_NAME_UPDATE"
 
-L.C.tagMethods["oUF_RiphieConfig:shortname"] = function(unit, ...)
+L.C.tagMethods["oUF_RiphieConfig:shortname"] = function(unit)
   local name = UnitName(unit)
   local class = UnitClassification(unit)
 

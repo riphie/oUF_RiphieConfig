@@ -1,4 +1,4 @@
-local A, L = ...
+local _, L = ...
 
 local _, class = UnitClass "player"
 
@@ -29,12 +29,12 @@ local NamePlateCVars = {
 }
 L.C.NamePlateCVars = NamePlateCVars
 
-local function FilterAuraBuffs(element, unit, data)
+local function FilterAuraBuffs(_, _, data)
   -- Only show buffs that are purgable/stealable or in the allow list
   return data.isStealable or L.C.NamePlateBuffAllowList[data.spellId]
 end
 
-local function FilterAuraDebuffs(element, unit, data)
+local function FilterAuraDebuffs(_, _, data)
   local isPlayer = UnitIsPlayer(data.sourceUnit)
 
   if L.C.NamePlateDebuffAllowList[class] then
@@ -47,10 +47,10 @@ end
 local important = { 0.98, 0.50, 0.45 } -- Peach
 
 local interruptable = { 1, 0, 1, 1 } -- Magenta
--- local secondaryInterruptable = { 0.96, 0.55, 0.73 } -- Pink
+local secondaryInterruptable = { 0.96, 0.55, 0.73 } -- Pink
 local stunnable = { 0, 1, 0, 1 } -- Lime
 local secondaryStunnable = { 0, 0, 1, 1 } -- Blue
--- local highPriority = { 0, 1, 1, 1 } -- Cyan
+local highPriority = { 0, 1, 1, 1 } -- Cyan
 local frontal = { 0.78, 0.61, 0.43 } -- Brown
 
 local NamePlateCustomUnits = {

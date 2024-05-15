@@ -1,6 +1,4 @@
-local A, L = ...
-
-local _, class = UnitClass "player"
+local _, L = ...
 
 local NamePlateBuffAllowList = {}
 L.C.NamePlateBuffAllowList = NamePlateBuffAllowList
@@ -27,6 +25,7 @@ local NamePlateDebuffAllowList = {
   ["ROGUE"] = {
     [408] = true, -- Kidney Shot
     [703] = true, -- Garrote
+    [1833] = true, -- Cheap Shot
     [1943] = true, -- Rupture
     [2094] = true, -- Blind
     [316220] = true, -- Find Weakness
@@ -56,12 +55,13 @@ local BossDebuffAllowList = {
   ["PRIEST"] = false,
   ["SHAMAN"] = {
     [188389] = true, -- Flame Shock
+    [334168] = true, -- Lashing Flames
   },
   ["ROGUE"] = {
     [1943] = true, -- Rupture
   },
   ["WARLOCK"] = false,
-  ["WARRIOR"] = {},
+  ["WARRIOR"] = false,
 }
 L.C.BossDebuffAllowList = BossDebuffAllowList
 

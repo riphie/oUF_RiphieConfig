@@ -1,6 +1,6 @@
-local A, L = ...
+local _, L = ...
 
-local function FilterAuraDebuffs(element, unit, data)
+local function FilterAuraDebuffs(_, _, data)
   return L.C.PartyDebuffAllowList[data.spellId]
 end
 

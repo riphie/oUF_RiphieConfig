@@ -1,4 +1,4 @@
-local A, L = ...
+local _, L = ...
 
 L.C.focus = {
   enabled = true,
@@ -24,7 +24,6 @@ L.C.focus = {
 
     name = {
       enabled = true,
-      size = 12,
       points = {
         { "TOPLEFT", 0, 10 },
         { "TOPRIGHT", 0, 10 },
@@ -50,7 +49,6 @@ L.C.focus = {
 
     healthperc = {
       enabled = true,
-      size = 12,
       point = { "RIGHT", -5, 0 },
       font = L.C.font,
       size = 12,

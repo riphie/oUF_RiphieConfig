@@ -8,6 +8,8 @@ local NamePlateDebuffAllowList = {
   ["DEMONHUNTER"] = {
     [179057] = true, -- Chaos Nova
     [204490] = true, -- Sigil of Silence
+    [204598] = true, -- Sigil of Flame
+    [207685] = true, -- Sigil of Misery
     [207771] = true, -- Fiery Brand
     [247456] = true, -- Frailty
   },
@@ -24,13 +26,15 @@ local NamePlateDebuffAllowList = {
   },
   ["ROGUE"] = {
     [408] = true, -- Kidney Shot
-    [703] = true, -- Garrote
     [1833] = true, -- Cheap Shot
     [1943] = true, -- Rupture
     [2094] = true, -- Blind
     [316220] = true, -- Find Weakness
   },
-  ["WARLOCK"] = false,
+  ["WARLOCK"] = {
+    [30283] = true, -- Shadowfury
+    [423583] = true, -- Doom Brand
+  },
   ["WARRIOR"] = {
     [355] = true, -- Taunt
     [1160] = true, -- Demoralizing Shout

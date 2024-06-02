@@ -60,8 +60,8 @@ L.C.party = {
   powerbar = {
     colorPower = true,
 
-    enabled = false,
-    size = { 180, 5 },
+    enabled = true,
+    size = { 150, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {

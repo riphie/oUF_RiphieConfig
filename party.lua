@@ -102,7 +102,7 @@ L.C.party = {
   },
 
   debuffs = {
-    enabled = false,
+    enabled = true,
 
     size = 25,
     point = { "LEFT", "RIGHT", 5, 0 },
@@ -114,7 +114,7 @@ L.C.party = {
     growthY = "DOWN",
     disableCooldown = true,
 
-    FilterAuras = FilterAuraDebuffs,
+    FilterAura = FilterAuraDebuffs,
 
     duration = {
       point = { "TOP", 0, 4 },

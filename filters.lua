@@ -29,7 +29,6 @@ local NamePlateDebuffAllowList = {
     [1833] = true, -- Cheap Shot
     [1943] = true, -- Rupture
     [2094] = true, -- Blind
-    [316220] = true, -- Find Weakness
   },
   ["WARLOCK"] = {
     [30283] = true, -- Shadowfury

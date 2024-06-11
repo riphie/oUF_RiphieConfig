@@ -242,7 +242,7 @@ L.C.NamePlateCallback = NamePlateCallback
 L.C.nameplate = {
   enabled = true,
 
-  size = { 180, 15 },
+  size = { 190, 18 },
   point = { "CENTER" },
   scale = 1 * UIParent:GetScale() * L.C.globalscale,
 
@@ -261,7 +261,7 @@ L.C.nameplate = {
         { "TOP", 0, 13 },
       },
       font = L.C.font,
-      size = 14,
+      size = 16,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,

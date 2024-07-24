@@ -9,7 +9,7 @@ local NamePlateCVars = {
   nameplateMinScaleDistance = 0,
   nameplateMaxScaleDistance = 40,
 
-  nameplateGlobalScale = 1,
+  nameplateGlobalScale = 0.70,
   NamePlateHorizontalScale = 1,
   NamePlateVerticalScale = 1,
   nameplateSelfScale = 1,

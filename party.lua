@@ -156,6 +156,6 @@ L.C.party = {
     showRaid = false,
     point = "TOP",
     xOffset = 0,
-    yOffset = -5,
+    yOffset = -7,
   },
 }

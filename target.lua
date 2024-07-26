@@ -4,7 +4,7 @@ L.C.target = {
   enabled = true,
 
   size = { 180, 25 },
-  point = { "LEFT", "UIParent", "CENTER", 200, -174 },
+  point = { "LEFT", "UIParent", "CENTER", 201, -173 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -77,7 +77,7 @@ L.C.target = {
   castbar = {
     enabled = true,
     size = { 180, 20 },
-    point = { "TOP", "BOTTOM", 0, -8 },
+    point = { "TOP", "BOTTOM", 0, -9 },
 
     name = {
       enabled = true,

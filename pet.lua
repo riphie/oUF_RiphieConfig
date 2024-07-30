@@ -32,7 +32,7 @@ L.C.pet = {
   castbar = {
     enabled = true,
     size = { 80, 20 },
-    point = { "TOP", "BOTTOM", 0, -5 },
+    point = { "TOP", "BOTTOM", 0, -4 },
 
     name = {
       enabled = true,
@@ -49,8 +49,8 @@ L.C.pet = {
 
     icon = {
       enabled = true,
-      size = { 26, 26 },
-      point = { "RIGHT", "LEFT", -6, 0 },
+      size = { 25, 25 },
+      point = { "RIGHT", "LEFT", -5, 0 },
     },
   },
 }

@@ -3,7 +3,7 @@ local _, L = ...
 L.C.raid = {
   enabled = true,
 
-  size = { 80, 20 },
+  size = { 90, 24 },
   points = {
     { "TOPLEFT", 20, -20 },
     { "TOP", "oUF_RiphieRaidHeader1", "BOTTOM", 0, -10 },
@@ -14,7 +14,7 @@ L.C.raid = {
     { "TOP", "oUF_RiphieRaidHeader6", "BOTTOM", 0, -10 },
     { "TOP", "oUF_RiphieRaidHeader7", "BOTTOM", 0, -10 },
   },
-  scale = 1 * L.C.globalscale,
+  scale = 0.8333 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },
 
@@ -32,7 +32,7 @@ L.C.raid = {
         { "RIGHT", -2, 0 },
       },
       font = L.C.font,
-      size = 11,
+      size = 12,
       outline = "OUTLINE",
       align = "CENTER",
       noshadow = true,

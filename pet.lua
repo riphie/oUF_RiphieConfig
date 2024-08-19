@@ -4,7 +4,7 @@ L.C.pet = {
   enabled = true,
 
   size = { 80, 20 },
-  point = { "RIGHT", "oUF_RiphiePlayer", "LEFT", -10, 0 },
+  point = { "RIGHT", "oUF_RiphiePlayer", "LEFT", -8, 0 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -32,7 +32,7 @@ L.C.pet = {
   castbar = {
     enabled = true,
     size = { 80, 20 },
-    point = { "TOP", "BOTTOM", 0, -4 },
+    point = { "TOP", "BOTTOM", 0, -8 },
 
     name = {
       enabled = true,

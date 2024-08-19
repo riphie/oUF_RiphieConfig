@@ -4,7 +4,7 @@ L.C.focus = {
   enabled = true,
 
   size = { 150, 20 },
-  point = { "RIGHT", "UIParent", "CENTER", -200, -300 },
+  point = { "RIGHT", "UIParent", "CENTER", -200, -297 },
   scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },
@@ -81,7 +81,7 @@ L.C.focus = {
   castbar = {
     enabled = true,
     size = { 150, 20 },
-    point = { "TOP", "BOTTOM", 0, -8 },
+    point = { "TOP", "BOTTOM", 0, -10 },
 
     name = {
       enabled = true,

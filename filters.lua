@@ -29,6 +29,7 @@ local NamePlateDebuffAllowList = {
     [1833] = true, -- Cheap Shot
     [1943] = true, -- Rupture
     [2094] = true, -- Blind
+    [441224] = true, -- Fazed
   },
   ["WARLOCK"] = {
     [30283] = true, -- Shadowfury
@@ -36,10 +37,9 @@ local NamePlateDebuffAllowList = {
   },
   ["WARRIOR"] = {
     [355] = true, -- Taunt
-    [1160] = true, -- Demoralizing Shout
     [132168] = true, -- Shockwave
     [132169] = true, -- Storm Bolt
-    [397364] = true, -- Thunderous Roar
+    [388539] = true, -- Rend
   },
 }
 L.C.NamePlateDebuffAllowList = NamePlateDebuffAllowList
@@ -64,7 +64,9 @@ local BossDebuffAllowList = {
     [1943] = true, -- Rupture
   },
   ["WARLOCK"] = false,
-  ["WARRIOR"] = false,
+  ["WARRIOR"] = {
+    [388539] = true, -- Rend
+  },
 }
 L.C.BossDebuffAllowList = BossDebuffAllowList
 

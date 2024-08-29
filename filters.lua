@@ -11,7 +11,6 @@ local NamePlateDebuffAllowList = {
     [204598] = true, -- Sigil of Flame
     [207685] = true, -- Sigil of Misery
     [207771] = true, -- Fiery Brand
-    [247456] = true, -- Frailty
   },
   ["DRUID"] = false,
   ["EVOKER"] = false,
@@ -29,7 +28,6 @@ local NamePlateDebuffAllowList = {
     [1833] = true, -- Cheap Shot
     [1943] = true, -- Rupture
     [2094] = true, -- Blind
-    [441224] = true, -- Fazed
   },
   ["WARLOCK"] = {
     [30283] = true, -- Shadowfury
@@ -70,7 +68,5 @@ local BossDebuffAllowList = {
 }
 L.C.BossDebuffAllowList = BossDebuffAllowList
 
-local PartyDebuffAllowList = {
-  [240443] = true, -- Burst
-}
+local PartyDebuffAllowList = {}
 L.C.PartyDebuffAllowList = PartyDebuffAllowList

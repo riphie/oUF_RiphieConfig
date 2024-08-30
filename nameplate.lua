@@ -13,13 +13,13 @@ local NamePlateCVars = {
   NamePlateHorizontalScale = 1,
   NamePlateVerticalScale = 1,
   nameplateSelfScale = 1,
-  nameplateSelectedScale = 1.1,
+  nameplateSelectedScale = 1.3,
   nameplateLargerScale = 1,
 
   nameplateShowFriendlyNPCs = 0,
 
-  nameplateMinAlpha = 0.6,
-  nameplateMaxAlpha = 0.6,
+  nameplateMinAlpha = 0.5,
+  nameplateMaxAlpha = 0.5,
 
   nameplateMinAlphaDistance = 0,
   nameplateMaxAlphaDistance = 40,

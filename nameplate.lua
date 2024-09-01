@@ -11,7 +11,7 @@ local NamePlateCVars = {
   NamePlateHorizontalScale = 1,
   NamePlateVerticalScale = 1,
   nameplateSelfScale = 1,
-  nameplateSelectedScale = 1.3,
+  nameplateSelectedScale = 1.1,
   nameplateLargerScale = 1,
 
   nameplateShowFriendlyNPCs = 0,
@@ -332,7 +332,7 @@ L.C.nameplate = {
 
   size = { 180, 15 },
   point = { "CENTER" },
-  scale = 1 * UIParent:GetScale() * L.C.globalscale,
+  scale = 1 * L.C.globalscale,
 
   healthbar = {
     colorDisconnected = false,
@@ -349,7 +349,7 @@ L.C.nameplate = {
         { "TOP", 0, 13 },
       },
       font = L.C.font,
-      size = 14,
+      size = 12,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
@@ -385,7 +385,7 @@ L.C.nameplate = {
   buffs = {
     enabled = true,
 
-    size = 25,
+    size = 22,
     point = { "BOTTOMRIGHT", "TOPRIGHT", 0, 20 },
     num = 5,
     cols = 5,
@@ -420,7 +420,7 @@ L.C.nameplate = {
   debuffs = {
     enabled = true,
 
-    size = 25,
+    size = 22,
     point = { "BOTTOMLEFT", "TOPLEFT", 0, 20 },
     num = 5,
     cols = 5,

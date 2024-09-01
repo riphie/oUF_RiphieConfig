@@ -14,7 +14,6 @@ L.C.tagEvents["oUF_RiphieConfig:status"] = "PLAYER_REGEN_DISABLED PLAYER_REGEN_E
 
 L.C.tagMethods["oUF_RiphieConfig:name"] = function(unit)
   local name = UnitName(unit)
-  local class = UnitClassification(unit)
 
   if L.C.NameAliases[name] then
     name = L.C.NameAliases[name]

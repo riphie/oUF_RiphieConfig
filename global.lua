@@ -26,32 +26,32 @@ L.C.textures = {
   absorb = LSM:Fetch("statusbar", "RiphieAbsorb"),
 }
 
-L.C.colors = {}
+L.C.colors = {
+  bgMultiplier = 0.3,
 
-L.C.colors.bgMultiplier = 0.3
+  healthbar = {
+    default = { 0, 1, 0 },
+    defaultBG = { 0 * L.C.colors.bgMultiplier, 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
 
-L.C.colors.healthbar = {
-  default = { 0, 1, 0 },
-  defaultBG = { 0 * L.C.colors.bgMultiplier, 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
+    own = { 0, 1, 0, 0.5 },
+    other = { 0, 1, 0.4, 0.5 },
 
-  own = { 0, 1, 0, 0.5 },
-  other = { 0, 1, 0.4, 0.5 },
+    threat = { 1, 0, 0 },
+    threatBG = { 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
 
-  threat = { 1, 0, 0 },
-  threatBG = { 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
+    threatInvers = { 0, 1, 0 },
+    threatInversBG = { 0 * L.C.colors.bgMultiplier, 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
 
-  threatInvers = { 0, 1, 0 },
-  threatInversBG = { 0 * L.C.colors.bgMultiplier, 1 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
+    absorb = { 0.1, 1, 1, 0.7 },
+  },
 
-  absorb = { 0.1, 1, 1, 0.7 },
-}
+  castbar = {
+    default = { 1, 0.7, 0 },
+    defaultBG = { 1 * L.C.colors.bgMultiplier, 0.7 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
 
-L.C.colors.castbar = {
-  default = { 1, 0.7, 0 },
-  defaultBG = { 1 * L.C.colors.bgMultiplier, 0.7 * L.C.colors.bgMultiplier, 0 * L.C.colors.bgMultiplier },
-
-  shielded = { 0.9, 0.1, 0.4 },
-  shieldedBG = { 0.9 * L.C.colors.bgMultiplier, 0.1 * L.C.colors.bgMultiplier, 0.4 * L.C.colors.bgMultiplier },
+    shielded = { 0.9, 0.1, 0.4 },
+    shieldedBG = { 0.9 * L.C.colors.bgMultiplier, 0.1 * L.C.colors.bgMultiplier, 0.4 * L.C.colors.bgMultiplier },
+  },
 }
 
 -- override oUF threat colouring

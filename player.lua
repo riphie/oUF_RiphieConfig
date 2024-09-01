@@ -3,16 +3,12 @@ local _, L = ...
 L.C.player = {
   enabled = true,
 
-  size = { 180, 24 },
-  point = { "RIGHT", "UIParent", "CENTER", -201, -174 },
+  size = { 200, 28 },
+  point = { "RIGHT", "UIParent", "CENTER", -200, -175 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
-    colorDisconnected = false,
-    colorReaction = false,
     colorClass = true,
-    colorHealth = false,
-    colorThreat = false,
 
     absorb = {
       enabled = true,
@@ -22,7 +18,7 @@ L.C.player = {
       enabled = true,
       point = { "CENTER", 0, 0 },
       font = L.C.font,
-      size = 10,
+      size = 13,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
@@ -53,28 +49,13 @@ L.C.player = {
   },
 
   powerbar = {
-    colorPower = true,
-
     enabled = false,
-    size = { 180, 3 },
-    point = { "TOP", "BOTTOM", 0, -1 },
-
-    power = {
-      enabled = false,
-      point = { "RIGHT", -2, 0 },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-      tag = "[perpp]",
-    },
   },
 
   castbar = {
     enabled = true,
-    size = { 218, 20 },
-    point = { "CENTER", "UIParent", "CENTER", 0, -294 },
+    size = { 220, 24 },
+    point = { "CENTER", "UIParent", "CENTER", 0, -320 },
 
     name = {
       enabled = true,
@@ -91,21 +72,10 @@ L.C.player = {
 
     time = {
       enabled = false,
-      points = {
-        { "LEFT", 2, 0 },
-        { "RIGHT", -2, 0 },
-      },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "RIGHT",
-      noshadow = true,
     },
 
     icon = {
       enabled = false,
-      size = { 20, 20 },
-      point = { "RIGHT", "LEFT", -5, 0 },
     },
 
     safezone = {
@@ -115,7 +85,5 @@ L.C.player = {
 
   raidicon = {
     enabled = false,
-    size = { 18, 18 },
-    point = { "CENTER", "LEFT", 0, 0 },
   },
 }

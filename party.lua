@@ -7,8 +7,8 @@ end
 L.C.party = {
   enabled = true,
 
-  size = { 150, 25 },
-  point = { "CENTER", "UIParent", "CENTER", -450, 0 },
+  size = { 180, 28 },
+  point = { "CENTER", "UIParent", "CENTER", -500, 0 },
   scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },
@@ -27,7 +27,7 @@ L.C.party = {
         { "RIGHT", 5, 0 },
       },
       font = L.C.font,
-      size = 12,
+      size = 14,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
@@ -36,24 +36,10 @@ L.C.party = {
 
     health = {
       enabled = false,
-      point = { "RIGHT", -2, 0 },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-      tag = "[oUF_Riphie:health]",
     },
 
     healthperc = {
       enabled = false,
-      point = { "LEFT", 5, 0 },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-      tag = "[perhp]%",
     },
   },
 
@@ -61,78 +47,50 @@ L.C.party = {
     colorPower = true,
 
     enabled = true,
-    size = { 150, 3 },
+    size = { 180, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {
       enabled = false,
-      point = { "LEFT", -2, 0 },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-      tag = "[perpp]",
     },
   },
 
   castbar = {
     enabled = false,
-    size = { 150, 20 },
-    point = { "LEFT", "RIGHT", 6, 0 },
-
-    name = {
-      enabled = true,
-      points = {
-        { "LEFT", 2, 0 },
-        { "RIGHT", -2, 0 },
-      },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-    },
-
-    icon = {
-      enabled = false,
-      size = { 26, 26 },
-      point = { "LEFT", "RIGHT", 5, 0 },
-    },
   },
 
   debuffs = {
-    enabled = true,
+    enabled = false,
 
-    size = 25,
-    point = { "LEFT", "RIGHT", 5, 0 },
-    num = 5,
-    cols = 5,
-    spacing = 5,
-    initialAnchor = "TOPLEFT",
-    growthX = "RIGHT",
-    growthY = "DOWN",
-    disableCooldown = true,
-
+    -- size = 25,
+    -- point = { "LEFT", "RIGHT", 5, 0 },
+    -- num = 5,
+    -- cols = 5,
+    -- spacing = 5,
+    -- initialAnchor = "TOPLEFT",
+    -- growthX = "RIGHT",
+    -- growthY = "DOWN",
+    -- disableCooldown = true,
+    --
     FilterAura = FilterAuraDebuffs,
-
-    duration = {
-      point = { "TOP", 0, 4 },
-      font = L.C.font,
-      size = 10,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-    },
-
-    count = {
-      point = { "BOTTOMRIGHT", 2, -2 },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-    },
+    --
+    -- duration = {
+    --   point = { "TOP", 0, 4 },
+    --   font = L.C.font,
+    --   size = 10,
+    --   outline = "OUTLINE",
+    --   align = "LEFT",
+    --   noshadow = true,
+    -- },
+    --
+    -- count = {
+    --   point = { "BOTTOMRIGHT", 2, -2 },
+    --   font = L.C.font,
+    --   size = 12,
+    --   outline = "OUTLINE",
+    --   align = "LEFT",
+    --   noshadow = true,
+    -- },
   },
 
   readycheck = {

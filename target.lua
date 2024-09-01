@@ -3,8 +3,8 @@ local _, L = ...
 L.C.target = {
   enabled = true,
 
-  size = { 180, 24 },
-  point = { "LEFT", "UIParent", "CENTER", 201, -174 },
+  size = { 200, 28 },
+  point = { "LEFT", "UIParent", "CENTER", 200, -175 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -25,7 +25,7 @@ L.C.target = {
         { "TOPRIGHT", 0, 10 },
       },
       font = L.C.font,
-      size = 12,
+      size = 14,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
@@ -59,25 +59,18 @@ L.C.target = {
     colorPower = true,
 
     enabled = true,
-    size = { 180, 3 },
+    size = { 200, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {
       enabled = false,
-      point = { "LEFT", -2, 0 },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-      tag = "[perpp]",
     },
   },
 
   castbar = {
     enabled = true,
-    size = { 180, 20 },
-    point = { "TOP", "BOTTOM", 0, -10 },
+    size = { 200, 24 },
+    point = { "TOP", "BOTTOM", 0, -7 },
 
     name = {
       enabled = true,
@@ -86,7 +79,7 @@ L.C.target = {
         { "RIGHT", -2, 0 },
       },
       font = L.C.font,
-      size = 12,
+      size = 13,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
@@ -94,29 +87,18 @@ L.C.target = {
 
     time = {
       enabled = false,
-      points = {
-        { "LEFT", 2, 0 },
-        { "RIGHT", -2, 0 },
-      },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "RIGHT",
-      noshadow = true,
     },
 
     icon = {
       enabled = false,
-      size = { 26, 26 },
-      point = { "RIGHT", "LEFT", -6, 0 },
     },
   },
 
   buffs = {
     enabled = true,
-
-    size = 20,
+    size = 23,
     point = { "BOTTOMLEFT", "RIGHT", 5, 5 },
+
     num = 40,
     cols = 8,
     spacing = 5,
@@ -128,7 +110,7 @@ L.C.target = {
     duration = {
       point = { "TOP", 0, 0 },
       font = L.C.font,
-      size = 10,
+      size = 11,
       outline = "OUTLINE",
       align = "CENTER",
       noshadow = true,
@@ -137,7 +119,7 @@ L.C.target = {
     count = {
       point = { "BOTTOMRIGHT", 2, -2 },
       font = L.C.font,
-      size = 12,
+      size = 13,
       outline = "OUTLINE",
       align = "CENTER",
       noshadow = true,
@@ -146,9 +128,9 @@ L.C.target = {
 
   debuffs = {
     enabled = true,
-
-    size = 20,
+    size = 23,
     point = { "TOPLEFT", "RIGHT", 5, -5 },
+
     num = 40,
     cols = 8,
     spacing = 5,
@@ -161,7 +143,7 @@ L.C.target = {
     duration = {
       point = { "TOP", 0, 0 },
       font = L.C.font,
-      size = 10,
+      size = 11,
       outline = "OUTLINE",
       align = "CENTER",
       noshadow = true,
@@ -170,7 +152,7 @@ L.C.target = {
     count = {
       point = { "BOTTOMRIGHT", 2, -2 },
       font = L.C.font,
-      size = 12,
+      size = 13,
       outline = "OUTLINE",
       align = "CENTER",
       noshadow = true,
@@ -179,7 +161,5 @@ L.C.target = {
 
   raidicon = {
     enabled = false,
-    size = { 18, 18 },
-    point = { "CENTER", "LEFT", 0, 0 },
   },
 }

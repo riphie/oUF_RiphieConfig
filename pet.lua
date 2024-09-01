@@ -3,8 +3,8 @@ local _, L = ...
 L.C.pet = {
   enabled = true,
 
-  size = { 80, 20 },
-  point = { "RIGHT", "oUF_RiphiePlayer", "LEFT", -8, 0 },
+  size = { 80, 28 },
+  point = { "RIGHT", "oUF_RiphiePlayer", "LEFT", -12, 0 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -21,7 +21,7 @@ L.C.pet = {
         { "RIGHT", -2, 0 },
       },
       font = L.C.font,
-      size = 12,
+      size = 14,
       outline = "OUTLINE",
       align = "CENTER",
       noshadow = true,
@@ -48,9 +48,7 @@ L.C.pet = {
     },
 
     icon = {
-      enabled = true,
-      size = { 25, 25 },
-      point = { "RIGHT", "LEFT", -5, 0 },
+      enabled = false,
     },
   },
 }

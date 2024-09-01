@@ -34,7 +34,6 @@ local NamePlateDebuffAllowList = {
     [423583] = true, -- Doom Brand
   },
   ["WARRIOR"] = {
-    [355] = true, -- Taunt
     [132168] = true, -- Shockwave
     [132169] = true, -- Storm Bolt
     [388539] = true, -- Rend

@@ -14,7 +14,7 @@ L.C.raid = {
     { "TOP", "oUF_RiphieRaidHeader6", "BOTTOM", 0, -10 },
     { "TOP", "oUF_RiphieRaidHeader7", "BOTTOM", 0, -10 },
   },
-  scale = 0.8333 * L.C.globalscale,
+  scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },
 
@@ -55,7 +55,7 @@ L.C.raid = {
   setup = {
     template = nil,
     visibility = "custom [group:raid] show; hide",
-    showPlayer = false,
+    showPlayer = true,
     showSolo = false,
     showParty = false,
     showRaid = true,

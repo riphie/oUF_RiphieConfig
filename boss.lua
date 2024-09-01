@@ -1,8 +1,7 @@
 local _, L = ...
 
-local _, class = UnitClass "player"
-
 local function FilterAuraDebuffs(_, _, data)
+  local _, class = UnitClass "player"
   local isPlayer = UnitIsPlayer(data.sourceUnit)
 
   if L.C.BossDebuffAllowList[class] then

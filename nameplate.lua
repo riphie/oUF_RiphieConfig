@@ -1,7 +1,5 @@
 local _, L = ...
 
-local _, class = UnitClass "player"
-
 local NamePlateCVars = {
   nameplateMinScale = 1,
   nameplateMaxScale = 1,
@@ -35,6 +33,7 @@ local function FilterAuraBuffs(_, _, data)
 end
 
 local function FilterAuraDebuffs(_, _, data)
+  local _, class = UnitClass "player"
   local isPlayer = UnitIsPlayer(data.sourceUnit)
 
   if L.C.NamePlateDebuffAllowList[class] then

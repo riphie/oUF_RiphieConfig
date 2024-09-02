@@ -3,8 +3,8 @@ local _, L = ...
 L.C.target = {
   enabled = true,
 
-  size = { 200, 28 },
-  point = { "LEFT", "UIParent", "CENTER", 200, -175 },
+  size = { 220, 32 },
+  point = { "LEFT", "UIParent", "CENTER", 200, -222 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -59,7 +59,7 @@ L.C.target = {
     colorPower = true,
 
     enabled = true,
-    size = { 200, 3 },
+    size = { 220, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {
@@ -69,7 +69,7 @@ L.C.target = {
 
   castbar = {
     enabled = true,
-    size = { 200, 24 },
+    size = { 220, 24 },
     point = { "TOP", "BOTTOM", 0, -7 },
 
     name = {

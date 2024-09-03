@@ -7,7 +7,7 @@ end
 L.C.party = {
   enabled = true,
 
-  size = { 180, 28 },
+  size = { 200, 35 },
   point = { "CENTER", "UIParent", "CENTER", -500, 0 },
   scale = 1 * L.C.globalscale,
 
@@ -47,7 +47,7 @@ L.C.party = {
     colorPower = true,
 
     enabled = true,
-    size = { 180, 3 },
+    size = { 200, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {

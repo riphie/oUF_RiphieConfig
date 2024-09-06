@@ -12,7 +12,10 @@ local NamePlateDebuffAllowList = {
     [207685] = true, -- Sigil of Misery
     [207771] = true, -- Fiery Brand
   },
-  ["DRUID"] = false,
+  ["DRUID"] = {
+    [164812] = true, -- Moonfire
+    [192090] = true, -- Trash
+  },
   ["EVOKER"] = false,
   ["HUNTER"] = false,
   ["MAGE"] = false,
@@ -46,7 +49,10 @@ local BossDebuffAllowList = {
   ["DEMONHUNTER"] = {
     [1490] = true, -- Chaos Brand
   },
-  ["DRUID"] = false,
+  ["DRUID"] = {
+    [164812] = true, -- Moonfire
+    [192090] = true, -- Trash
+  },,
   ["EVOKER"] = false,
   ["HUNTER"] = false,
   ["MAGE"] = false,

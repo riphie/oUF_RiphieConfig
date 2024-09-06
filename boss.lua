@@ -14,18 +14,16 @@ end
 L.C.boss = {
   enabled = true,
 
-  size = { 200, 30 },
+  size = { 200, 34 },
   point = { "CENTER", "UIParent", "CENTER", 500, 120 },
   scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },
 
   healthbar = {
-    colorDisconnected = false,
-    colorReaction = false,
+    colorDisconnected = true,
     colorClass = true,
     colorHealth = true,
-    colorThreat = false,
 
     frequentUpdates = true,
 
@@ -36,22 +34,11 @@ L.C.boss = {
         { "RIGHT", -5, 0 },
       },
       font = L.C.font,
-      size = 12,
+      size = 14,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
-      tag = "[oUF_RiphieConfig:shortname]",
-    },
-
-    healthperc = {
-      enabled = true,
-      point = { "RIGHT", -5, 0 },
-      font = L.C.font,
-      size = 12,
-      outline = "OUTLINE",
-      align = "LEFT",
-      noshadow = true,
-      tag = "[perhp]%",
+      tag = "[oUF_RiphieConfig:name]",
     },
   },
 
@@ -59,7 +46,7 @@ L.C.boss = {
     colorPower = true,
 
     enabled = true,
-    size = { 151, 3 },
+    size = { 200, 3 },
     point = { "TOP", "BOTTOM", 0, -1 },
 
     power = {
@@ -147,3 +134,19 @@ L.C.boss = {
     yOffset = -10,
   },
 }
+
+SlashCmdList["TESTBOSS"] = function()
+  oUF_RiphieBoss1:Show()
+  oUF_RiphieBoss1.Hide = function() end
+  oUF_RiphieBoss1.unit = "player"
+  oUF_RiphieBoss2:Show()
+  oUF_RiphieBoss2.Hide = function() end
+  oUF_RiphieBoss2.unit = "player"
+  oUF_RiphieBoss3:Show()
+  oUF_RiphieBoss3.Hide = function() end
+  oUF_RiphieBoss3.unit = "player"
+  oUF_RiphieBoss4:Show()
+  oUF_RiphieBoss4.Hide = function() end
+  oUF_RiphieBoss4.unit = "player"
+end
+SLASH_TESTBOSS1 = "/testboss"

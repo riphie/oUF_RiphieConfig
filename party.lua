@@ -7,8 +7,8 @@ end
 L.C.party = {
   enabled = true,
 
-  size = { 200, 35 },
-  point = { "CENTER", "UIParent", "CENTER", -500, 0 },
+  size = { 200, 34 },
+  point = { "CENTER", "UIParent", "CENTER", -500, 120 },
   scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },
@@ -19,6 +19,8 @@ L.C.party = {
     colorClass = true,
     colorHealth = true,
     colorThreat = true,
+
+    frequentUpdates = true,
 
     name = {
       enabled = true,

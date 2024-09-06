@@ -4,7 +4,7 @@ local NamePlateBuffAllowList = {}
 L.C.NamePlateBuffAllowList = NamePlateBuffAllowList
 
 local NamePlateDebuffAllowList = {
-  ["DEATH_KNIGHT"] = false,
+  ["DEATHKNIGHT"] = false,
   ["DEMONHUNTER"] = {
     [179057] = true, -- Chaos Nova
     [204490] = true, -- Sigil of Silence
@@ -45,7 +45,7 @@ local NamePlateDebuffAllowList = {
 L.C.NamePlateDebuffAllowList = NamePlateDebuffAllowList
 
 local BossDebuffAllowList = {
-  ["DEATH_KNIGHT"] = false,
+  ["DEATHKNIGHT"] = false,
   ["DEMONHUNTER"] = {
     [1490] = true, -- Chaos Brand
   },

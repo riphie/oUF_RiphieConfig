@@ -52,7 +52,7 @@ local BossDebuffAllowList = {
   ["DRUID"] = {
     [164812] = true, -- Moonfire
     [192090] = true, -- Trash
-  },,
+  },
   ["EVOKER"] = false,
   ["HUNTER"] = false,
   ["MAGE"] = false,
@@ -73,5 +73,7 @@ local BossDebuffAllowList = {
 }
 L.C.BossDebuffAllowList = BossDebuffAllowList
 
-local PartyDebuffAllowList = {}
+local PartyDebuffAllowList = {
+  -- TODO: add Sated
+}
 L.C.PartyDebuffAllowList = PartyDebuffAllowList

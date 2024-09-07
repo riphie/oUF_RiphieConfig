@@ -73,9 +73,9 @@ L.C.party = {
     -- growthX = "RIGHT",
     -- growthY = "DOWN",
     -- disableCooldown = true,
-    --
+
     FilterAura = FilterAuraDebuffs,
-    --
+
     -- duration = {
     --   point = { "TOP", 0, 4 },
     --   font = L.C.font,
@@ -84,7 +84,7 @@ L.C.party = {
     --   align = "LEFT",
     --   noshadow = true,
     -- },
-    --
+
     -- count = {
     --   point = { "BOTTOMRIGHT", 2, -2 },
     --   font = L.C.font,
@@ -115,6 +115,7 @@ L.C.party = {
     showParty = true,
     showRaid = false,
     point = "TOP",
+    relativePoint = "BOTTOM",
     xOffset = 0,
     yOffset = -10,
   },

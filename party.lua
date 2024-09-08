@@ -8,7 +8,7 @@ L.C.party = {
   enabled = true,
 
   size = { 200, 34 },
-  point = { "CENTER", "UIParent", "CENTER", -500, 120 },
+  point = { "CENTER", "UIParent", "CENTER", -500, 174 },
   scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },
@@ -105,6 +105,12 @@ L.C.party = {
     enabled = true,
     size = { 15, 15 },
     point = { "CENTER", "RIGHT", -12, 0 },
+  },
+
+  summonindicator = {
+    enabled = true,
+    size = { 15, 15 },
+    point = { "CENTER", "CENTER", 0, 0 },
   },
 
   setup = {

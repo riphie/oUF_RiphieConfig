@@ -8,7 +8,7 @@ L.C.party = {
   enabled = true,
 
   size = { 200, 34 },
-  point = { "CENTER", "UIParent", "CENTER", -500, 174 },
+  point = { "CENTER", "UIParent", "CENTER", -525, 54 },
   scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },

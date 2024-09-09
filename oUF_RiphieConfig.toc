@@ -3,6 +3,7 @@
 ## Author: Riphie
 ## Title: oUF_RiphieConfig
 ## RequiredDeps: SharedMedia_Riphie
+## IconTexture: Interface\AddOns\oUF_RiphieConfig\media\monkey.tga
 
 init.lua
 global.lua

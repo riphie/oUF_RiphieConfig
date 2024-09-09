@@ -63,7 +63,7 @@ L.C.boss = {
 
   castbar = {
     enabled = true,
-    size = { 150, 20 },
+    size = { 160, 24 },
     point = { "LEFT", "RIGHT", 6, 0 },
 
     name = {

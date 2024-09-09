@@ -16,8 +16,8 @@ local NamePlateCVars = {
 
   nameplateShowFriendlyNPCs = 0,
 
-  nameplateMinAlpha = 0.5,
-  nameplateMaxAlpha = 0.5,
+  nameplateMinAlpha = 0.7,
+  nameplateMaxAlpha = 0.7,
 
   nameplateMinAlphaDistance = 0,
   nameplateMaxAlphaDistance = 40,

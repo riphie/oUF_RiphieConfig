@@ -69,3 +69,6 @@ oUF.colors.reaction[5] = { 0.26, 1, 0.22 }
 oUF.colors.reaction[6] = { 0.26, 1, 0.22 }
 oUF.colors.reaction[7] = { 0.26, 1, 0.22 }
 oUF.colors.reaction[8] = { 0.26, 1, 0.22 }
+
+-- Update mana color to a better color
+oUF.colors.power["MANA"] = { 0, 0.55, 1 }

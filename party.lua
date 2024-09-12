@@ -109,7 +109,7 @@ L.C.party = {
 
   summonindicator = {
     enabled = true,
-    size = { 15, 15 },
+    size = { 20, 20 },
     point = { "CENTER", "CENTER", 0, 0 },
   },
 

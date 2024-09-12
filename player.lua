@@ -95,12 +95,12 @@ L.C.player = {
     growthX = "LEFT",
     growthY = "DOWN",
     spacingX = 5,
-    spacingY = 10,
+    spacingY = 20,
 
     disableCooldown = true,
 
     duration = {
-      point = { "BOTTOM", 0, 0 },
+      point = { "BOTTOM", 0, -10 },
       font = L.C.font,
       size = 12,
       outline = "OUTLINE",
@@ -130,13 +130,13 @@ L.C.player = {
     growthX = "LEFT",
     growthY = "DOWN",
     spacingX = 5,
-    spacingY = 10,
+    spacingY = 20,
 
     disableCooldown = true,
     onlyShowPlayer = false,
 
     duration = {
-      point = { "BOTTOM", 0, 0 },
+      point = { "BOTTOM", 0, -10 },
       font = L.C.font,
       size = 12,
       outline = "OUTLINE",

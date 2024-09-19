@@ -1,6 +1,13 @@
 {
-    "diagnostics.globals": [
-        "oUF",
-        "LibStub"
-    ]
+  "diagnostics.globals": [
+    "IsResting",
+    "LibStub",
+    "UnitAffectingCombat",
+    "UnitClass",
+    "UnitIsPlayer",
+    "UnitName",
+    "UnitNameplateShowsWidgetsOnly",
+    "UnitWidgetSet",
+    "oUF"
+  ]
 }

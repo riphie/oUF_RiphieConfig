@@ -134,19 +134,3 @@ L.C.boss = {
     yOffset = -10,
   },
 }
-
-SlashCmdList["TESTBOSS"] = function()
-  oUF_RiphieBoss1:Show()
-  oUF_RiphieBoss1.Hide = function() end
-  oUF_RiphieBoss1.unit = "player"
-  oUF_RiphieBoss2:Show()
-  oUF_RiphieBoss2.Hide = function() end
-  oUF_RiphieBoss2.unit = "player"
-  oUF_RiphieBoss3:Show()
-  oUF_RiphieBoss3.Hide = function() end
-  oUF_RiphieBoss3.unit = "player"
-  oUF_RiphieBoss4:Show()
-  oUF_RiphieBoss4.Hide = function() end
-  oUF_RiphieBoss4.unit = "player"
-end
-SLASH_TESTBOSS1 = "/testboss"

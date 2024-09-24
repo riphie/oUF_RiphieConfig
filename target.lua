@@ -108,7 +108,7 @@ L.C.target = {
     disableCooldown = true,
 
     duration = {
-      point = { "TOP", 0, 0 },
+      point = { "TOP", 0, 5 },
       font = L.C.font,
       size = 11,
       outline = "OUTLINE",
@@ -117,7 +117,7 @@ L.C.target = {
     },
 
     count = {
-      point = { "BOTTOMRIGHT", 2, -2 },
+      point = { "BOTTOMRIGHT", 2, -5 },
       font = L.C.font,
       size = 13,
       outline = "OUTLINE",
@@ -141,7 +141,7 @@ L.C.target = {
     onlyShowPlayer = true,
 
     duration = {
-      point = { "TOP", 0, 0 },
+      point = { "TOP", 0, 5 },
       font = L.C.font,
       size = 11,
       outline = "OUTLINE",
@@ -150,7 +150,7 @@ L.C.target = {
     },
 
     count = {
-      point = { "BOTTOMRIGHT", 2, -2 },
+      point = { "BOTTOMRIGHT", 2, -5 },
       font = L.C.font,
       size = 13,
       outline = "OUTLINE",

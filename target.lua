@@ -4,7 +4,7 @@ L.C.target = {
   enabled = true,
 
   size = { 220, 32 },
-  point = { "LEFT", "UIParent", "CENTER", 200, -222 },
+  point = { "LEFT", "UIParent", "CENTER", 200, -202 },
   scale = 1 * L.C.globalscale,
 
   healthbar = {
@@ -21,8 +21,8 @@ L.C.target = {
     name = {
       enabled = true,
       points = {
-        { "TOPLEFT", 0, 10 },
-        { "TOPRIGHT", 0, 10 },
+        { "TOPLEFT", 0, 20 },
+        { "TOPRIGHT", 0, 20 },
       },
       font = L.C.font,
       size = 14,

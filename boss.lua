@@ -15,7 +15,7 @@ L.C.boss = {
   enabled = true,
 
   size = { 200, 34 },
-  point = { "CENTER", "UIParent", "CENTER", 525, 120 },
+  point = { "CENTER", "UIParent", "CENTER", 525, 100 },
   scale = 1 * L.C.globalscale,
 
   range = { insideAlpha = 1, outsideAlpha = 0.6 },

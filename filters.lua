@@ -28,9 +28,11 @@ local NamePlateDebuffAllowList = {
   },
   ["ROGUE"] = {
     [408] = true, -- Kidney Shot
+    [703] = true, -- Garrote
     [1833] = true, -- Cheap Shot
     [1943] = true, -- Rupture
     [2094] = true, -- Blind
+    [121411] = true, -- Crimson Tempest
   },
   ["WARLOCK"] = {
     [30283] = true, -- Shadowfury
@@ -64,6 +66,7 @@ local BossDebuffAllowList = {
     [334168] = true, -- Lashing Flames
   },
   ["ROGUE"] = {
+    [703] = true, -- Garrote
     [1943] = true, -- Rupture
   },
   ["WARLOCK"] = false,

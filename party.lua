@@ -95,6 +95,12 @@ L.C.party = {
     -- },
   },
 
+  grouproleindicator = {
+    enabled = true,
+    size = { 12, 12 },
+    point = { "TOPRIGHT", -2, -2 },
+  },
+
   readycheck = {
     enabled = true,
     size = { 18, 18 },
@@ -103,8 +109,8 @@ L.C.party = {
 
   raidicon = {
     enabled = true,
-    size = { 15, 15 },
-    point = { "CENTER", "RIGHT", -12, 0 },
+    size = { 12, 12 },
+    point = { "BOTTOMRIGHT", -3, 3 },
   },
 
   summonindicator = {

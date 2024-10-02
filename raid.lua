@@ -40,6 +40,12 @@ L.C.raid = {
     },
   },
 
+  grouproleindicator = {
+    enabled = true,
+    size = { 12, 12 },
+    point = { "TOPRIGHT", -2, -2 },
+  },
+
   readycheck = {
     enabled = true,
     size = { 18, 18 },

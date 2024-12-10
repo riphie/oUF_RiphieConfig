@@ -23,7 +23,7 @@ local NamePlateCVars = {
   nameplateMaxAlphaDistance = 40,
 
   nameplateSelectedAlpha = 1,
-  nameplateOccludedAlphaMult = 0.8,
+  nameplateOccludedAlphaMult = 0.3,
 }
 L.C.NamePlateCVars = NamePlateCVars
 

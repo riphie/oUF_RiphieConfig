@@ -22,6 +22,10 @@ L.C.party = {
 
     frequentUpdates = true,
 
+    absorb = {
+      enabled = true,
+    },
+
     name = {
       enabled = true,
       points = {

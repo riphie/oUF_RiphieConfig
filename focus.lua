@@ -25,15 +25,15 @@ L.C.focus = {
     name = {
       enabled = true,
       points = {
-        { "TOPLEFT", 0, 10 },
-        { "TOPRIGHT", 0, 10 },
+        { "TOPLEFT", 0, 20 },
+        { "TOPRIGHT", 0, 20 },
       },
       font = L.C.font,
       size = 14,
       outline = "OUTLINE",
       align = "LEFT",
       noshadow = true,
-      tag = "[oUF_RiphieConfig:name]",
+      tag = "[oUF_RiphieConfig:shortname]",
     },
 
     health = {

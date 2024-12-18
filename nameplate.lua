@@ -45,12 +45,12 @@ end
 
 -- Borrowed from https://wago.io/Whiiskeyznpccolor
 
-local priority = { 1, 0, 1, 1 } -- pink
-local secondary = { 0, 0.74902, 1, 1 } -- baby blue
-local tertiary = { 0, 0, 1, 1 } -- blue
-local highHP = { 0.576471, 0.439216, 0.858824, 1 } -- purple
-local seasonal = { 1, 0.843137, 0, 1 } -- gold
-local least = { 0.78, 0.61, 0.43 } -- brown
+local priority = { 1, 0, 1, 1 } -- pink (high prio / interrupts)
+local secondary = { 0, 0.74902, 1, 1 } -- baby blue (secondary prio / interrupts)
+local tertiary = { 0, 0, 1, 1 } -- blue (tertiary prio / casters)
+local highHP = { 0.576471, 0.439216, 0.858824, 1 } -- purple (high hp)
+local seasonal = { 1, 0.843137, 0, 1 } -- gold (neutral / seasonal affix)
+local least = { 0.78, 0.61, 0.43 } -- brown (low prio)
 
 local NamePlateCustomUnits = {
   -- Mythic+ Affixes
@@ -393,6 +393,7 @@ L.C.nameplate = {
     initialAnchor = "BOTTOMRIGHT",
     growthX = "LEFT",
     growthY = "UP",
+    disableMouse = true,
     disableCooldown = true,
     filter = "HELPFUL|INCLUDE_NAME_PLATE_ONLY",
 
@@ -428,6 +429,7 @@ L.C.nameplate = {
     initialAnchor = "TOPLEFT",
     growthX = "RIGHT",
     growthY = "UP",
+    disableMouse = true,
     disableCooldown = true,
     filter = "HARMFUL|PLAYER|INCLUDE_NAME_PLATE_ONLY",
 

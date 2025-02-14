@@ -330,7 +330,7 @@ L.C.NamePlateCallback = NamePlateCallback
 L.C.nameplate = {
   enabled = true,
 
-  size = { 180, 15 },
+  size = { 180, 20 },
   point = { "CENTER" },
   scale = 1 * L.C.globalscale,
 
